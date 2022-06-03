@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 9  </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+           <!-- progress etiketi görüldüğü üzere yükleniyor şeklindeki o durum çubuğunu oluşturur altta buna javascript ile etki edeceğiz burada önemli olan bu etiketin ne amaçla kullanıldığı şu anda javascript hakkında bir bilgimiz olmadığından dolayı anlamamız çok normal :)
+            <label>Yükleniyor...</label>
+            <progress max="100"></progress>
+            --> 
+
+            <label>Yükleniyor...</label>
+            <progress max="100" value="0" id="load" style="width: 300px;"> </progress>
+            <h3 id="result"></h3>
+            
+        </section>
+
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+
+        <!--55 ile 57 satır aralarında oluşturduğumuz progress etiketi yani yükleniyor simgesine altta javascript kodları ile etki edelim-->
+        <script>
+            var valueLoad=0;
+            progressBar(valueLoad);
+            function progressBar(valueLoad){
+                var bar = document.getElementById("load");
+                bar.value=valueLoad;
+                valueLoad++;
+                var loadTime = setTimeout("progressBar("+valueLoad+")", 50);
+                if(valueLoad > 100){
+                    clearTimeout(loadTime);
+                    document.getElementById("result").innerHTML="Yükleme Tamamlandı";
+                }
+            }
+
+        </script>
+    </body>
+</html>
+

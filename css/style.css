@@ -1,0 +1,7363 @@
+/*lesson2.html
+h2{
+    text-align: center;
+    letter-spacing: 1.5px;
+}
+
+/*aşağıda bulunan * ile html sayfamızda bulunan tüm etiketlere etki edeceğimiz anlamına gelmektedir. 
+*{
+    color:goldenrod;
+}
+
+
+makale{
+    color:darkgoldenrod;
+    background-color: #111;
+    padding:15px;
+    margin-bottom:25px;
+    display: block;
+}
+*/
+
+/*lesson4.html
+.page-top{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #2E2B2B;
+}
+
+.page-left{
+    background-color: darkred;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    width: 70%;
+    height: 400px;
+    float:left; /* buradaki içeriğimi yan yana yazabilmek için 
+}
+
+.page-right{
+    background-color: goldenrod;
+    color: white;
+    padding: 10px;
+    text-align: justify;
+    width: 27%;
+    height: 400px;
+    float:left; /* buradaki içeriğimi yan yana yazabilmek için 
+}
+
+body{
+    margin:0;
+}
+
+.page-left .content{
+    padding:10px;
+}
+
+.page-left header{
+    color:burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+*/
+
+
+/*lesson5.html
+.page-top{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #2E2B2B;
+}
+
+.page-left{
+    background-color: darkred;
+    color:white;
+    text-align: justify;
+    padding:10px;
+    height:400px;
+    width:70%;
+    float:left;
+}
+.page-right{
+    background-color: black;
+    color:white;
+    text-align: justify;
+    padding:10px;
+    height:400px;
+    width:27%;
+    float:right;
+}
+
+.page-left header{
+    color: darkgoldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page-left .content{
+    padding: 10px;
+}
+
+.page-right header{
+    text-align: center;
+}
+
+.page-right a{
+    color: white;
+    text-decoration: none;
+}
+
+.page-right li{
+    list-style-type: none;
+    padding:10px;
+}
+
+.page-right a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding:10px;
+    text-align: center;
+    height:30px;
+    clear:left; /*yukarıda kullandığımız .page-right ve .page-left de biz float:right ve float:left kullandık biz burada height verdigimizde o float degerleri yerine gitmesine izin vermiyor bundan dolayı biz burada clear:left diyoruz li öncesinde uygulanan float degerlerine takılmasın onları temizlesin ve height uyguladıgımız bölgeye gelsin eger bunu yapmasaydık float:left ve float:right olan bölgede background color olacaktı. 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*biz bir de baslıga logo ekleyelim ve ekledigimizde göreceğiz ki yine sayfanın tasarımı bozulacak bundan dolayı yine orada da clear:lefti kullanacağız ama clear:left i css de değil lesson5.html gidip header etiketi içinde boş bir div açıp ona style olarak clear:left atayacağız, lesson5.html de 16.satırda bulunan kod. sorunu çözeceğiz. 
+.page-top img{
+    float:left;
+    
+}
+
+body{
+    margin:0;
+}
+*/
+
+/*lesson6.html
+.page-top{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #2E2B2B;
+}
+
+.page-left{
+    background-color: darkred;
+    color:white;
+    text-align: justify;
+    padding:10px;
+    height:500px;
+    width:70%;
+    float:left;
+}
+.page-right{
+    background-color: black;
+    color:white;
+    text-align: justify;
+    padding:10px;
+    height:500px;
+    width:27%;
+    float:right;
+}
+
+.page-left header{
+    color: darkgoldenrod;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.page-left .content{
+    padding: 10px;
+}
+
+.page-right header{
+    text-align: center;
+}
+
+.page-right a{
+    color: white;
+    text-decoration: none;
+}
+
+.page-right li{
+    list-style-type: none;
+    padding:10px;
+}
+
+.page-right a:hover{
+    color: red;
+    text-decoration: none;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding:10px;
+    text-align: center;
+    height:30px;
+    clear:left; /*yukarıda kullandığımız .page-right ve .page-left de biz float:right ve float:left kullandık biz burada height verdigimizde o float degerleri yerine gitmesine izin vermiyor bundan dolayı biz burada clear:left diyoruz li öncesinde uygulanan float degerlerine takılmasın onları temizlesin ve height uyguladıgımız bölgeye gelsin eger bunu yapmasaydık float:left ve float:right olan bölgede background color olacaktı. 
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+/*biz bir de baslıga logo ekleyelim ve ekledigimizde göreceğiz ki yine sayfanın tasarımı bozulacak bundan dolayı yine orada da clear:lefti kullanacağız ama clear:left i css de değil lesson5.html gidip header etiketi içinde boş bir div açıp ona style olarak clear:left atayacağız, lesson5.html de 16.satırda bulunan kod. sorunu çözeceğiz. 
+.page-top img{
+    float:left;
+    
+}
+
+body{
+    margin:0;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    margin:0; /*boşluklar oluştuğu için alt ve üstte onları kapatmak için margin 0 verdim 
+    padding: 18px;
+}
+
+.menu ul li {
+    list-style-type: none;
+    display: inline;
+    padding-right: 25px;
+}
+
+.menu ul li a{
+    text-decoration: none;
+    color: antiquewhite;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 20px;   
+    padding: 18px; 
+}
+
+.menu a:hover{
+    background-color: #7D2728;
+}
+
+aside hgroup *{
+    border-bottom: 1px solid #ccc;
+    color: darkgreen;
+}
+*/
+
+/*lesson7.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 540px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 540px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+
+/*lesson8.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 540px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+   
+    
+    padding:10px;
+    width: 75.3%;
+    height: 540px;
+    float:right;
+}
+
+.change header{
+    color: brown;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    
+}
+
+/* figure ve figcaptiona css ile etki etmekbu kod ile görmüş oluyoruz ki figure 1 grubu temsil ediyor
+.change figure{
+    border: 1px solid #666; -->bu kod ile görmüş oluyoruz ki figure 1 grubu temsil ediyor
+    text-align: center; --> bu kod ise grup içinde olan resimlerin merkezde olmasını sağlar.
+}
+
+
+.change figcaption{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #555;
+    font-size:12px;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+
+/*lesson9.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 540px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 540px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+
+/*lesson10.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 540px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 540px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+
+/*lesson11.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 540px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 540px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson11.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson13.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson15.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson16.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson17.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson18.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson19.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: darkred;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson20.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson21.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson22.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson23.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+/*lesson24.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+  
+}
+*/
+/*lesson25.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    
+}
+*/
+
+/*lesson26.html
+.corner{
+    border-radius: 10px;
+    background: #900;
+    padding: 30px;
+    height: 60px;
+    color:white;
+    width: 30%;
+}
+
+.corner2{
+    border-radius: 50px/15px;
+    background: #900;
+    padding: 30px 0px 0px 30px;
+    height: 60px;
+    color:white;
+    width: 30%;
+}
+
+.corner3{
+    border-radius: 50%;
+    background: #900;
+    padding: 50px 0px 0px 30px;
+    height: 80px;
+    color:white;
+    width: 30%;
+}
+
+*/
+/*lesson26.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+}
+
+.border-image{
+    border: 10px solid transparent;
+    color: black;
+    padding: 25px;
+    border-image: url(../img/border.png) 20 space !important;
+    width: 150px;
+}
+*/
+/*lesson27.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+}
+
+.border-image{
+    border: 10px solid transparent;
+    color: black;
+    padding: 25px;
+    border-image: url(../img/border.png) 20 space !important;
+    width: 150px;
+}
+*/
+/*lesson28.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 740px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 740px;
+    float:right;
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+}
+/*
+#Back{
+    background-image: url(../img/img_flwr.gif), url(../img/paper.gif);
+    background-position: right bottom, left top;
+    background-repeat: no-repeat, repeat;
+    padding: 15px;
+
+    /*background ozelliklerini tek satırda da yazabilirdik soyle ki;
+    background: url(../img/img_flwr.gif) right bottom no-repeat, url(../img/paper.gif) left top repeat; 
+
+}
+
+.flower{
+    border: 1px solid black;
+    width: 150px;
+    height: 120px;
+    color: black;
+    background:  url(../img/img_flwr.gif) no-repeat;
+    background-size: 50px 80px;
+    margin: 20px;
+}
+.flower2{
+    border: 1px solid black;
+    width: 150px;
+    height: 120px;
+    color: black;
+    background:  url(../img/img_flwr.gif) no-repeat;
+    background-size: contain;
+    margin: 20px;
+
+}
+.flower3{
+    border: 1px solid black;
+    width: 150px;
+    height: 120px;
+    color: black;
+    background:  url(../img/img_flwr.gif) no-repeat;
+    background-size: cover;
+    margin: 20px;
+
+}
+.flower4{
+    border: 1px solid black;
+    width: 150px;
+    height: 120px;
+    color: black;
+    margin: 20px;
+    background:  url(../img/img_flwr.gif) no-repeat;
+}
+*/
+/*lesson29.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+
+.Back1{
+    border: 10px dotted green;
+    background:url(../img/img_flwr.gif) no-repeat;
+    padding: 15px;
+    width: 70%;
+    background-origin: padding-box; /*default
+    margin-bottom: 20px;
+}
+
+.Back2{
+    border: 10px dotted green;
+    background:url(../img/img_flwr.gif) no-repeat;
+    padding: 15px;
+    width: 70%;
+    background-origin: border-box; 
+    margin-bottom: 20px;
+
+}
+
+.Back3{
+    border: 10px dotted green;
+    background:yellow;
+    padding: 15px;
+    width: 70%;
+    background-origin: content-box;
+    margin-bottom: 20px;
+
+}
+.Back5{
+    border: 10px dotted green;
+    background:yellow;
+    padding: 15px;
+    width: 70%;
+    background-clip: padding-box; 
+    margin-bottom: 20px;
+}
+
+.Back6{
+    border: 10px dotted green;
+    background:yellow;
+    padding: 15px;
+    width: 70%;
+    background-clip: border-box; /*default
+    margin-bottom: 20px;
+
+}
+
+.Back7{
+    border: 10px dotted green;
+    background:yellow;
+    padding: 15px;
+    width: 70%;
+    background-clip: content-box; 
+    margin-bottom: 20px;
+
+}
+*/
+/*lesson30.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1350px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1300px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1350px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+
+.color{
+    padding: 15px;
+    background-color: red;
+    color: white;
+}
+
+.color1{
+    padding: 15px;
+    background-color: #531A1B;
+    color: white;
+
+}
+
+.color2{
+    padding: 15px;
+    background-color: rgb(255,50,0); /*rgb(renk,renk,renk)
+    color: white;
+}
+
+.color3{
+    padding: 15px;
+    background-color: rgba(255,50,0,0.5); /* a değeri yani parantez icindeki son değer opacity degeridir.
+    color: white;
+}
+
+.color4{
+    padding: 15px;
+    background-color: hsl(200,100%,30%); /*hsl(renk,doygunluk,açıklık)
+    color: white;
+}
+
+.color5{
+    padding: 15px;
+    background-color: hsla(200,100%,30%,0.5); /*hsla(renk,doygunluk,açıklık,opacity)
+    color: white;
+}
+/* yukarıda iki kodun renkleri doygunlukları aynı olmasına rağmen opacity etkisini görebiliyoruz
+
+.grad1{
+    height: 200px;
+    width: 500px;
+    margin-bottom: 20px;
+    background:red;
+    background-image: linear-gradient(red,black); /*default olan yukarıdan aşağı kırmızıdan siyahadır
+}
+
+.grad2{
+    height: 200px;
+    width: 500px;
+    margin-bottom: 20px;
+    background:red;
+    background-image: linear-gradient(to right, red, black); /*sağdan sola kırmızıdan siyaha doğru için to right
+}
+/*to rigt: sağdan sola, to left: soldan sağa, to top: aşağıdan yukarı, to bottom: yukarıdan aşağı, kırmızı renk için
+.grad3{
+    height: 200px;
+    width: 500px;
+    margin-bottom: 20px;
+    background:red;
+    background-image: linear-gradient(to left bottom, red, black) /*diagonal renk için to left bottom yani sol aşağı doğru kırmızıdan siyahlaşacak kutu
+}
+.grad5{
+    height: 200px;
+    width: 500px;
+    margin-bottom: 20px;
+    background:red;
+    background-image: linear-gradient(180deg, red, black, white, blue); /*birden fazla renkte verilebilir gradyanda
+}
+.grad4{
+    height: 200px;
+    width: 500px;
+    margin-bottom: 20px;
+    background:red;
+    background-image: linear-gradient(180deg, red, black);
+}
+/*0deg = aşağıdan yukarı, 90deg: sağdan sola, 180deg: yukarıdan aşağı, -90deg: soldan sağa, kırmızı renk için olan değerler*/
+
+/*lesson31.hmtl
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+
+.grd1{
+    height: 200px;
+    width: 500px;
+    margin-bottom:20px;
+    background-image: linear-gradient(to right, rgba(255,0,0,0.3), rgba(255,0,0,1)) 
+}
+/*hem rgba ile linear gradiant oluşturduk hem de kırmızı rengin opaklığı ile gradyan oluşturduk
+
+.grd2{
+    height: 200px;
+    width: 500px;
+    margin-bottom:20px;
+    background-image: linear-gradient(to left, yellow 20%, blue 80%, white);
+}
+/*gradyan renklerin oranlarını da belirleyebiliyoruz
+
+.grd3{
+    height: 200px;
+    width: 500px;
+    margin-bottom:20px;
+    background-image: radial-gradient(blue,yellow);
+}
+
+.grd4{
+    height: 200px;
+    width: 500px;
+    margin-bottom:20px;
+    background-image: radial-gradient(circle, blue,yellow);
+}
+
+.grd5{
+    height: 200px;
+    width: 500px;
+    margin-bottom:20px;
+    background-image: radial-gradient(closest-side at 50% 55%, yellow,blue);
+}
+
+farthest-side: en uzak taraf, closest-corner: en yakın köşe, farthest-corner: en uzak köşe */
+
+/*lesson32.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+
+.baslik{
+    text-align: center;
+    text-shadow: 3px 2px 3px rgba(255, 0, 0, 0.6), 5px 5px 3px hsla(61, 100%, 20%, 0.8);
+    color: black!important;
+}
+
+.baslik2{
+    text-align: center;
+    text-shadow: -1px 0 black, 0 1px black, 1px 0 black, 0 -1px black;
+    color: white!important;
+}
+*/
+/*lesson33.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+
+
+.shadow3{
+    width: 450px;
+    height: 100px;
+    background-color: antiquewhite;
+    box-shadow: 2px 3px 10px rgba(255, 100, 28, 0.7);
+    margin-bottom: 20px;
+}
+.shadow4{
+    position: relative;
+    width: 750px;
+    height: 550px;
+    background-color: antiquewhite;
+    box-shadow: 2px 3px 10px rgba(255, 100, 28, 0.7);
+    margin-bottom: 20px;
+}
+
+#photo{
+    margin: 45px;
+    border-style: inset;
+    box-shadow: 2px 3px 10px rgba(0, 0, 0, 0.4);
+    z-index: -1;
+    width: 88%;
+}
+*/
+/*lesson34.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+.text1{
+    width: 180px;
+    border: 1px solid #111;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+    
+}
+
+.text2{
+    width: 180px;
+    border: 1px solid #111;
+    margin-bottom: 20px;
+    overflow: hidden;
+    text-overflow: clip;
+    white-space: nowrap;
+}    
+
+.text3{
+    width: 180px;
+    border: 1px solid #111;
+    margin-bottom: 20px;
+    word-wrap: break-word;
+
+}
+.text4{
+    width: 180px;
+    border: 1px solid #111;
+    margin-bottom: 20px;
+    word-break:keep-all;
+}
+*/
+/*lesson35.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.special-font{
+    font-family: 'Merriweather', serif; /* bu font google clouddan çekilmiştir html sayfasında head sayfasına 3 link eklenmiştir
+}
+
+@font-face {
+    font-family: 'ChocoBubble';
+    src: url(../font/ChocoBubble-BallonStyle.ttf); /*burada fontumuzu font dosyasına kopyaladık ve bu kod ile font dosyasından kodumuzun kullanımını aktifleştirmiş olduk
+    font-size: normal;
+    font-style: normal;
+}
+
+.special-font2{
+    font-family: 'ChocoBubble';
+    font-size: 24px;
+    font-style: italic;
+}
+*/
+
+/*lesson36.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.normal{
+    width: 300px;
+    height: 120px;
+    background-color: darkolivegreen;
+    border: 2px dotted black;
+    margin: 10px;
+    color: white;
+    padding: 10px;
+}
+/*
+.transform{
+    transform: translate(-150px, 100px); /*eski konumuna göre yeni konum belirlemek için (x,y) yandaki kod sağ ve aşağı için
+    transform: translate(-50px, 100px); yandaki kod ise sola ve yukarı gitmek için - li olduğu için*/
+
+    /*transform: rotate(20deg); nesneyi saat yönü veya tersine döndürmek için kullanılır, derece ile kullanırız -li si saat yönü tersine dir.
+    transform: rotate(-20deg) --> saat yönü tersi.*/
+
+    /*transform: scale(2,2); nesnenin genişliğini ve yüksekliğini kısacası boyutunu ayarlamak için kullandığımız bir koddur.
+    px hesabı ile değil kat hesabı ile hesaplanır yukarıdakai kodun anlamı genişliği ve yüksekliğini 2 katına çıkar anlamındadır.
+    transform: scale(0.5, 0.5) --> nesnenin hem genişliğini hem de yüksekliğini yarıya indir anlamına gelmektedir.*/
+
+    /*transform: skewX(10deg) skewX --> nesneyi x koordinatına göre yamuk hale getir paralel kenar benzeri */
+    /*transform: skewY(10deg) skewX --> nesneyi y koordinatına göre yamuk hale getir paralel kenar benzeri */
+    /*transform: skew(20deg, 10deg) skew(x,y) --> nesneyi hem x koordinatına hem de y koordinatına göre yamuk hale getir paralel kenar benzeri aynı anda kullanım kolaylığı sağlar*/
+
+    /*transform: matrix(1,0.3,0,2,200,500); matrix(scalex, skewy, skewx, scaley, translatex, translatey); matrix kodu ile
+    hepsinin birleşimini yapabiliyoruz.
+}
+*/
+
+/*lesson37.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+/* 1.kısım html içinde
+.normal{
+    position: relative;
+    width: 400px;
+    height: 150px;
+    background-color: darkolivegreen;
+    border: 1px dotted black;
+    margin: 5px;
+    color: white;
+    padding: 10px;
+
+}
+
+.transform{
+   /* transform: rotateX(180deg); rotateX --> 3 boyutlu bir nesnenin x yönüne doğru hareket etmesini sağlar*/
+   /* transform: rotateY(100deg);  rotatey --> 3 boyutlu bir nesnenin y yönüne doğru hareket etmesini sağlar*/
+   /*transform: rotateZ(70deg);  rotatez --> 3 boyutlu bir nesnenin z yönüne doğru hareket etmesini sağlar
+}
+*/
+
+/*2.kısım html içinde
+.normal{
+    position: relative;
+    width: 400px;
+    height: 150px;
+    background-color: darkolivegreen;
+    border: 1px dotted black;
+    margin: 5px;
+    color: white;
+    padding: 10px;
+
+}
+
+.transform{
+    position: absolute;
+    padding: 45px;
+    border: 1px solid black;
+    background-color: darkgoldenrod;
+    transform: rotate(30deg);   bu ve aşağıdaki kodun anlamı şudur. nesnemize 30 derecelik döndürme işlemini gerçekleştirdikten sonra
+    transform-origin: 20% 45%;      normal div sınırları içinde (çünkü normal dive biz position relative verdik) transform-origin kodu ile
+                                    döndürme işlemini konumlandırdığım yeri belirliyoruz.
+                                    
+}
+*/
+/*3.kısım html içinde
+.normal{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: darkolivegreen;
+    border: 1px dotted black;
+    margin: 5px;
+    color: white;
+    padding: 10px;
+
+}
+
+.transform{
+    padding: 45px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: darkgoldenrod;
+    transform: rotateY(60deg);
+    transform-style: preserve-3d; iç içe geçen nesnelerde 3d alanlarının nasıl işleyeceğini karar vermemizi sağlıyor
+
+}
+
+.transform2{
+    padding: 45px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: darkred;
+    transform: rotateY(-60deg);
+    
+}
+*/
+
+/*4.kısım html içinde
+.normal{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: darkcyan;
+    border: 1px dotted black;
+    margin-left: 350px;
+    perspective: 90px;
+    perspective-origin: none; /*perspektif açısını belirler
+}
+
+.normal2{
+    position: relative;
+    width: 200px;
+    height: 200px;
+    background-color: darkolivegreen;
+    border: 1px dotted black;
+    margin-left: 50px;
+    perspective:none;
+    perspective-origin: none;
+}
+
+.transform{
+    padding: 50px;
+    position: absolute;
+    border: 1px solid black;
+    background-color: darkgoldenrod;
+    transform: rotateX(45deg);
+    background: rgba(0,10,10,0.4);
+    transform-style: preserve-3d;
+}
+*/
+
+/*lesson38.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.transition{
+    width: 300px;
+    height: 100px;
+    background: darkolivegreen;
+    margin:20px;
+    /*transition: width 2s;
+    -webkit-transition: width 1s, transform 1s;
+    transition-property: width;
+    transition-duration: 0.5s;
+    transition-timing-function: linear;
+    transition-delay: 0.3s;
+
+    /*transition: width 2s linear 0.3s;*/
+    /*transition-delay: 1s; transition geciktirerek başlıyor 1sn geçikme ile harekete geç anlamındadır.
+}
+
+.transition:hover{
+    width:650px;
+    transform: rotate(360deg);
+}
+
+/* bunların ne anlama geldiği defterde lesson38 sayfasında yazmaktadır
+.tr{
+    transition-timing-function: linear;
+    -webkit-transition-timing-function: linear;
+}
+
+.tr1{
+    transition-timing-function: ease;
+    -webkit-transition-timing-function: ease;
+}
+
+.tr2{
+    transition-timing-function: ease-in;
+    -webkit-transition-timing-function: ease-in;
+}
+
+.tr3{
+    transition-timing-function: ease-out;
+    -webkit-transition-timing-function: ease-out;
+}
+
+.tr4{
+    transition-timing-function: ease-in-out;
+    -webkit-transition-timing-function: ease-in-out;
+}
+*/
+
+/*lesson39.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+/*
+transformlara transition ile geçiş efekti verme kısmıdır.
+.transition{
+    width: 100px;
+    height: 100px;
+    margin:20px;
+    padding:20px;
+    background-color: darkred;
+    color:#FFF;
+    transition: all 1s ease-in-out;
+}
+
+.transition:hover{
+    transform: translate(150px); eski konumuna göre yeni konum vermek için
+    /*transform: rotate(120deg); nesneyi döndürmek için kullanırız*/
+    /*transform:scale(1.5); nesnenin genişliğini ve yüksekliğini büyültmek için kullanırız (width, high)*/
+    /*transform: skew(-30deg, 60deg);nesnenin yamuk oluşumunu veya paralelkenar oluşumunu sağlamak için kullanırız
+}
+*/
+/*
+.transition{
+    clear: both;
+    border:none;
+    width:95%;
+    display: flex;
+    justify-content: center; içeriği eşit aralıklarla iki tarafa yasla anlamındadır
+    flex-wrap: wrap;
+    color:#FFF;
+
+}
+
+.transition div{
+    flex: 1;
+    cursor: pointer; fare imlecini değiştirmek amacıyla kullanılır
+    background: darkred;
+    transition: all .5s;
+    padding: 20px;
+    text-align: center;
+}
+
+.transition div:hover{
+    flex:1.5;
+    background: darkkhaki;
+}
+*/
+
+/*lesson40.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.rule{
+    width: 100px;
+    height: 100px;
+    margin: 20px;
+    background-color: green;
+    position:relative; /*kutumuzun hareketini sağlatabilmemiz açısından position relative önemli
+    
+}
+
+.rule:hover{
+    animation-name: Renk;
+    animation-duration: 4s;
+    animation-delay: .5s; /*animasyonumuzun geçikmeli başlamısını oluşturmak için kullanırız
+    animation-iteration-count: 3; /*animasyonumuzun tekrarlı şekilde çalışmasını istersek bu kodu kullanırız
+    eğer sınırsız şekilde tekrarını istersek; animation-iteration-count:infinity; kodunu kullanırız
+    animation-direction: reverse; /*animasyonun saat yönü tersine doğru çalışmasını sağlar.
+    eğer animasyonun bir saat yönü bir saat yönü tersine çalışmasını dilersek şu şekilde yapmamız gerek;
+    animation-direction: alternate;
+
+-webkit-animation-name: Renk;
+-webkit-animation-duration: 4s;
+-webkit-animation-delay: .5s; /*animasyonumuzun geçikmeli başlamısını oluşturmak için kullanırız
+-webkit-animation-iteration-count: 3; /*animasyonumuzun tekrarlı şekilde çalışmasını istersek bu kodu kullanırız
+    eğer sınırsız şekilde tekrarını istersek; animation-iteration-count:infinity; kodunu kullanırız
+
+}
+
+@keyframes Renk{
+    /* from-to kalıbı hangi renkten hangi renge geçmek için kullanırız aşağıda farklı bir kullanım daha göstereceğim
+    from{background-color: darkgoldenrod;}  
+    to{background-color: black;}                
+    */
+
+    /*
+    0%{background-color: yellow}
+    25%{background-color: yellowgreen}
+    50%{background-color: green}
+    75%{background-color: darkgreen}
+    100%{background-color: darkolivegreen}
+    */
+
+    /*şimdi kutumuzun hareketini de sağlatalım
+    0%{background-color: yellow;left:0px; top:0px;}
+    25%{background-color: yellowgreen;left:200px; top:0px;}
+    50%{background-color: green;left:200px; top:200px;}
+    75%{background-color: darkgreen;left:0px; top:200px;}
+    100%{background-color: darkolivegreen;left:0px; top:0px;}
+}
+
+@-webkit-keyframes Renk{
+    /* from-to kalıbı hangi renkten hangi renge geçmek için kullanırız aşağıda farklı bir kullanım daha göstereceğim
+    from{background-color: darkgoldenrod;}  
+    to{background-color: black;}                
+    */
+
+    /*
+    0%{background-color: yellow}
+    25%{background-color: yellowgreen}
+    50%{background-color: green}
+    75%{background-color: darkgreen}
+    100%{background-color: darkolivegreen}
+    
+
+    /*şimdi kutumuzun hareketini de sağlatalım
+    0%{background-color: yellow;left:0px; top:0px;}
+    25%{background-color: yellowgreen;left:200px; top:0px;}
+    50%{background-color: green;left:200px; top:200px;}
+    75%{background-color: darkgreen;left:0px; top:200px;}
+    100%{background-color: darkolivegreen;left:0px; top:0px;}
+}
+*/
+/*lesson41.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.rules{
+    margin:20px;
+    width: 80px;
+    height: 80px;
+    background-color: darkred;
+    color:white;
+    position: relative;
+    padding: 15px;
+    /*animation-name: move;
+    animation-duration:5s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    
+    animation: move 5s infinite alternate;
+}
+
+@keyframes move{
+    from{left:0px; width:80px;}
+    to{left:480px; width:250px;}
+}
+
+.time1{
+    animation-timing-function: linear;
+}
+
+.time2{
+    animation-timing-function: ease;
+}
+
+.time3{
+    animation-timing-function: ease-in;
+}
+
+.time4{
+    animation-timing-function: ease-out;
+}
+
+.time5{
+    animation-timing-function: ease-in-out;
+}
+*/
+
+/*lesson42.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+#cube{
+    width: 400px;
+    height: 400px;
+    margin:20px;
+    perspective: 800px;
+}
+
+.box{
+    width:400px;
+    animation-name: move;
+    animation-duration: 10s;
+    animation-iteration-count: infinite;
+    transform-style: preserve-3d; /*eğer bu kodu yazmazsak yaptığımız küp 2 boyutlu kare şeklinde görünecekti bunun sayesinde küp şeklini korudu
+    
+}
+
+.box div{
+    color:white;
+    font: 64px impact;
+    text-align: center;
+    width: 400px;
+    height: 400px;
+    position: absolute;
+    opacity: .6;
+}
+
+.front-face{
+    transform: translateZ(200px);
+    background: black;
+}
+
+.back-face{
+    transform: rotate(180deg) translateZ(200px);
+    background:black;
+}
+
+.left-face{
+    transform: rotateY(-90deg) translateX(-200px);
+    transform-origin: left;
+    background:black
+}
+
+.right-face{
+    transform: rotateY(90deg) translateX(200px);
+    transform-origin: right;
+    background:black;
+}
+
+.top-face{
+    transform: rotateX(-90deg) translateY(-200px);
+    transform-origin:top;
+    background-color:black;
+}
+
+.bottom-face{
+    transform: rotateX(90deg) translateY(200px);
+    transform-origin: bottom;
+    background:black;
+}
+
+@keyframes move{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg);}
+}
+*/
+
+/*lesson42.html
+main{
+    overflow-x:hidden;  
+}
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+ resim ile ilgili ilk kısım.
+img{
+    width: 30%;
+    height: auto;
+    border: 1px solid #999;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px; /*border resme yapışıktı borderı farkettirmek için padding verdim
+}
+
+img:hover{
+    box-shadow: 0 0 8px 1px aqua;
+}
+*/
+
+/* resim ile ilgili ikinci kısım
+ resmimizi tam ortaya almak için tüm satırı resme ayırdık display ile sonra margin yukarı ve aşağıdan 10px sağ ve sol ot yaptık
+img{
+    width: 30%;
+    height: auto;
+    border: 1px solid #999;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+}
+*/
+
+/*resim ile ilgili 3.kısım
+resmin responsive olması için width: 100% yaptık yüksekliğide genişliğe göre oto ayarlasın dedik
+img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #999;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+}
+resmin genişliği 100% peki biz bu resmi küçültmek için ne yapacğız aşağıda da örneğini göreceğiz bir dış div ile
+resmin dive göre genişliği 100% olacak yani div içinde resim 100% görünecek div 80px de olsa resim 80px içinde
+tam şekilde görünecek anlamındadır. ancak divin genişliği ile resmimizin boyutunu oynayacağız .
+*/
+
+/* resim ile ilgili 4.kısım
+resim kartı uygulama
+img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #999;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+    
+}
+
+.borderImg{
+    width: 40%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.2);
+
+}
+
+.content-footer{
+    text-align: center;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    padding: 10px 20px;
+}
+*/
+
+/*resim ile ilgili 5.uygulama
+img{
+    width: 100%;
+    height: auto;
+    border: 1px solid #999;
+    margin: 10px;
+    border-radius: 8px;
+    padding: 5px;
+    display: block;
+    margin: 10px auto;
+    
+}
+
+.borderImg{
+    width: 45%;
+    background-color: white;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.3), 0 6px 20px 0 rgba(0,0,0,0.2);
+    position: relative; /*dış div sınır olarak belirledik
+
+
+}
+
+.content-footer{
+    position:absolute; dış div sınır olarak belirledik yukarıda absolute yapmamızın sebebi sınır içinde hareketini sağlamak
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    /* 0a 0 yaptık kutunun en köşesine gitti yukarıdaki cümleleri kanıtlamış olduk.
+    top: 0px;
+    left: 0px;
+    
+    biz bu aşağıdaki iki kod ile ortaya gelmesini bekliyorduk ama resime göre ortaladı dive göre değil dive göre olması için 
+    translate kullanacağız
+    top: 50%;
+    left: 50%;
+    transform:  translate(-50%, -50%); 
+    color: black;
+    
+}
+*/
+
+/*lesson44.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+/*filtre özellikleri
+img{
+    width: 30%;
+    height: auto;
+    float: left;
+    margin: 10px;
+    border: 1px solid #999;
+    padding: 5px;
+}
+
+.blur{
+    filter: blur(3px);
+}
+
+.brightness{
+    filter:brightness(250%);
+}
+
+.constrast{
+    filter:contrast(180%);
+}
+
+.grayscale{
+    filter:grayscale(100%);
+}
+
+.huerotate{
+    filter:hue-rotate(180deg);
+}
+
+.invert{
+    filter:invert(100%);
+}
+
+.opacity{
+    filter: opacity(50%);
+}
+
+.saturate{
+    filter: saturate(6);
+}
+
+.sepia{
+    filter:sepia(100%);
+}
+
+.dropShadow{
+    filter:drop-shadow(8px 8px 10px grey);
+}
+*/
+
+/*hover overlay
+
+.container{
+    position: relative;
+    width: 25%;
+    margin: 25px;
+}
+
+.picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    height: 100%;
+    width: 100%;
+    opacity:0;
+    background-color: darkolivegreen;
+    transition: .5s ease;
+}
+
+.content-text{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+*/
+
+/*lesson45.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+/*1.ksıım
+.container{
+    position: relative;
+    width: 25%;
+    margin: 25px;
+}
+
+.picture{
+    width: 100%;
+    height: auto;
+    display: block;
+    opacity: 1;
+    transition: .5s easer;
+    backface-visibility: hidden;
+}
+
+.overlay{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform: translate(-50%, -50%);
+    opacity:0;
+    background-color: darkolivegreen;
+    transition: .5s ease;
+}
+
+.content-text{
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 32px;
+    padding: 16px 32px;
+}
+
+.container:hover .overlay{
+    opacity: 1;
+}
+
+.container:hover .picture{
+    opacity: 0.4;
+}
+*/
+
+/*2.kısım*/
+/*yukarıdan aşağıya hover overlay
+.container{
+    position: relative;
+    width: 25%;
+}
+
+.picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 100%;
+    right:0;
+    left:0;
+    background-color: darkolivegreen;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .7s ease;
+}
+
+.content-text{
+    position: absolute;
+    color:white;
+    font-size: 18px;
+    overflow:hidden;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+.container:hover .overlay{
+    bottom: 0;
+    height: 100%;
+}
+*/
+/*aşağıdan yukarı
+.container{
+    position: relative;
+    width: 25%;
+}
+
+.picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    bottom: 0%;
+    right:0;
+    left:0;
+    background-color: darkolivegreen;
+    overflow: hidden;
+    width: 100%;
+    height: 0;
+    transition: .7s ease;
+}
+
+.content-text{
+    position: absolute;
+    color:white;
+    font-size: 18px;
+    overflow:hidden;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+.container:hover .overlay{
+    
+    height: 100%;
+}
+*/
+/*soldan sağa
+.container{
+    position: relative;
+    width: 25%;
+}
+
+.picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    bottom:0;
+    right:0;
+    left:0;
+    background-color: darkolivegreen;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    transition: .7s ease;
+}
+
+.content-text{
+    position: absolute;
+    color:white;
+    font-size: 18px;
+    overflow:hidden;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+.container:hover .overlay{
+    
+    width: 100%;
+}
+*/
+
+/*sağdan sola
+.container{
+    position: relative;
+    width: 25%;
+}
+
+.picture{
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.overlay{
+    position: absolute;
+    bottom:0;
+    right:0;
+    left:100%;
+    background-color: darkolivegreen;
+    overflow: hidden;
+    width: 0%;
+    height: 100%;
+    transition: .7s ease;
+}
+
+.content-text{
+    position: absolute;
+    color:white;
+    font-size: 18px;
+    overflow:hidden;
+    top: 50%;
+    left:50%;
+    transform: translate(-50%,-50%);
+    white-space: nowrap;
+}
+
+.container:hover .overlay{
+    left: 0%;
+    width: 100%;
+}
+*/
+
+/*lesson46.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+img{
+
+    -webkit-margin-left: 10%;
+    -webkit-transform: perspective(400) rotateY(40deg);
+    -webkit-transform-origin: 0% 0%;
+    -webkit-animation: door 2s;
+
+}
+
+@-webkit-keyframes door{
+    0%{
+        -webkit-transform: perspective(400) rotateY(80deg);
+        -webkit-transform-origin: 0% 0%;
+        -webkit-animation-timing-function: ease-in
+    }
+
+    50%{
+        -webkit-transform: perspective(400) rotateY(0deg);
+        -webkit-transform-origin: 0% 0%;
+        -webkit-animation-timing-function: ease;
+    }
+
+    100%{
+        -webkit-transform: perspective(400) rotateY(40deg);
+        -webkit-transform-origin: 0% 0%;
+        -webkit-animation-timing-function: ease-out;
+    }
+}
+*/
+
+/*lesson47.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+img{
+    width: 30%;
+    height: auto;
+    display: block;
+    margin: 15px auto;
+    padding: 25px;
+    animation-name: logo;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+    
+}
+
+@keyframes logo{
+    0%{transform: rotateY(0deg);}
+    100%{transform: rotateY(360deg)}
+}
+
+@keyframes logo{
+    0%{transform: rotateY(0deg) rotateX(0deg);}
+    25%{transform: translateY(100px) rotateX(180deg);}
+    50%{transform: rotateX(360deg) translateX(-100px);}
+}
+*/
+
+/*lesson48.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.text{
+    position: absolute;
+    list-style-type: none;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50% -50%);
+}
+
+.text li{
+    display: inline-block;
+    margin-right: 10px;
+    font-size: 3em;
+    opacity: 1;
+    font-weight: bold;
+    transition: all 2s ease;
+    color:black;
+}
+
+.text li:last-child{
+    margin-right:0;
+}
+
+.text.Hidden{
+    opacity: 1;
+}
+
+.text.Hidden li:nth-child(1){
+    transform: translate(-220px, -220px);
+}
+.text.Hidden li:nth-child(2){
+    transform: translate(30px, 100px);
+}
+.text.Hidden li:nth-child(3){
+    transform: translate(-120px, -60px);
+}
+.text.Hidden li:nth-child(4){
+    transform: translate(10px, -200px);
+}
+.text.Hidden li:nth-child(5){
+    transform: translate(-210px, 190px);
+}
+.text.Hidden li:nth-child(6){
+    transform: translate(-75px, 10px);
+}
+.text.Hidden li:nth-child(7){
+    transform: translate(250px, 220px);
+}
+.text.Hidden li:nth-child(8){
+    transform: translate(-20px, 100px);
+}
+.text.Hidden li:nth-child(9){
+    transform: translate(280px, 45px);
+}
+*/
+
+/*lesson50.html*/
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+/* buton ile işlem 1
+.btn-group .button{
+    background-color: darkred;
+    color: white;
+    border: 2px solid black;
+    padding: 15px 30px;
+    text-align: center;
+    margin: 4px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 16px;
+    float: left;
+}
+
+.btn-group .button:hover{
+    background-color: darkolivegreen;
+}
+
+.btn-group .button:not(:last-child){ son eleman olan button hariç butonlara uygula anlamındadır
+    border-right: none;
+}
+
+.btn-group .button:not(:first-child){ ilk eleman olan button hariç butonlara uygula anlamındadır
+    border-left: none;
+}
+*/
+/*buton işlem2
+.button{
+    background-color: #423c08;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    text-align: center;
+    margin: 4px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 28px;
+    display: block;
+    width: 19%;
+    transition: all .5s;
+}
+
+.button span{
+    cursor: pointer;
+    display: inline-block;
+    position: relative;
+    transition: .5s;
+}
+
+.button span::after{
+    content: '>>';
+    position: absolute;
+    opacity:0;
+    top:3px;
+    right: -38px;
+    transition: .5s;
+
+}
+
+.button:hover span{
+    padding-right: 25px;
+}
+
+.button:hover span:after{
+    opacity:1;
+    right:-15px;
+}
+*/
+/*buton işlem3 
+.button{
+    background-color: #423c08;
+    color: white;
+    border: none;
+    padding: 15px 40px;
+    text-align: center;
+    margin: 4px 5px;
+    text-decoration: none;
+    cursor: pointer;
+    font-size: 28px;
+    display: block;
+    width: 19%;
+    transition: all .5s;
+    box-shadow: 0px 10px 6px 0 #999;
+    border-radius: 10px;
+    border: outset;
+}
+
+.button:hover{
+    background-color: #2F2A05;
+}
+
+.button:active{
+    background-color: #2F2A05;
+    box-shadow: 0px 4px 5px 0 #999;
+    transform: translateY(4px);
+}
+*/
+
+/*lesson51.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+1.kısım
+.pagination{
+    display: inline-block;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    float:left;
+    padding: 8px 16px;
+    border: 1px solid black;
+}
+
+.pagination .active{
+    background-color: darkred;
+    color:#fff;
+}
+
+.pagination a:hover:not(.active){
+    background-color: darkolivegreen;
+    color:#FFF;
+}
+*/
+/*2.kısım
+.pagination{
+    display: inline-block;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    float:left;
+    padding: 8px 16px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.pagination a:not(odd){
+    border-left: 1px solid black;
+}
+
+.pagination a:last-child{
+    border-right: 1px solid black;
+}
+
+.pagination .active{
+    background-color: darkred;
+    color:#fff;
+}
+
+.pagination a:hover:not(.active){
+    background-color: darkolivegreen;
+    color:#FFF;
+}
+
+.pagination{
+    display: inline-block;
+}
+
+.pagination a{
+    color: black;
+    text-decoration: none;
+    float:left;
+    padding: 8px 16px;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
+}
+
+.pagination a:not(odd){
+    border-left: 1px solid black;
+}
+
+.pagination a:last-child{
+    border-right: 1px solid black;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    background-color: orange;
+    color:white;
+}
+
+.pagination a:first-child{
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
+    background-color: orange;
+    color:white;
+}
+
+.pagination .active{
+    background-color: darkred;
+    color:#fff;
+}
+
+.pagination a:hover:not(.active){
+    background-color: darkolivegreen;
+    color:#FFF;
+}
+*/
+
+/*lesson52.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.breadcrumb{
+    color: gray;
+    background-color: #c2c7c4;
+    padding: 8px 16px;
+    list-style-type: none;
+}
+
+.breadcrumb li{
+    display: inline;
+}
+
+.breadcrumb li a{
+    color:darkred;
+    text-decoration: none;
+}
+
+.breadcrumb li+li:before{
+    content: '/\00a0';
+    color:black;
+    padding:8px;
+}
+
+.breadcrumb li a:hover{
+    text-decoration: underline;
+}
+*/
+
+/*lesson53.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+/*
+.userface{
+    border: 2px solid darkolivegreen;
+    width: 25%;
+    padding: 20px;
+    resize: horizontal; yatayda yeniden boyutlandır
+    /*resize: vertical; dikeyde yeniden boyutlandır
+    resize:both; /*hem yatay hem de düşeyde yeniden boyutlandırma
+    overflow: auto; /*nesnem ekrana yatayda veya düşeyde ekrana sığmıyorsa scroll çubuğu oluştur anlamında
+}
+*/
+/*
+textarea{
+    resize: none;
+}
+*/
+/*
+.box1{
+    margin-top: 50px;
+    margin-left: 100px;
+    border: 5px solid red;
+    padding: 5px;
+    height: 20%;
+    width: 20%;
+    outline: 10px solid green; /*dış çerçeve ancak burada bordera yapışık şekildedir
+    outline-offset: 3px; /*offset ile border yapışıklığını ayırıyoruz
+}
+*/
+
+/*lesson54.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+
+.setting{
+    width: 50%;
+    height: 100px;
+    float:left;
+}
+
+.big{
+    background-color: darkolivegreen;
+    border: 2px solid red;
+    box-sizing: border-box;
+    padding: 40px;
+}
+
+.small{
+    background-color: yellow;
+}
+*/
+
+/*lesson55.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+*/
+/*
+.flex-container{
+    width: 90%;
+    height: 700px;
+    background-color:darkred;
+    display: flex;
+    flex-direction: row; default
+    flex-direction: row-reverse;yazılar normal olacak şekilde tersine sıralar
+    flex-direction: column; y ekseninde sıralar, sıraya göre sıralar
+    flex-direction: column-reverse; y ekseninde sıranın tersine göre sıralar
+    flex-direction: row;
+   
+
+    justify-content: space-between;
+    /*justify-content: space-around
+}
+
+.item{
+    background-color: rgba(255,255,255,0.8);
+    width: 200px;
+    height: 200px;
+    margin:15px;
+}
+ */
+
+
+
+/*lesson56.html
+body{
+    margin:0;
+}
+.header{
+    background-color: darkkhaki;
+    padding: 10px;
+    text-align: center;
+    color: #333;
+}
+
+.menu ul{
+    background-color: #531A1B;
+    padding: 15px;
+    margin:0;
+}
+
+.menu ul li{
+    list-style-type: none;
+    display: inline;
+    padding-right: 20px;
+    
+}
+
+.menu a{
+    color: white;
+    text-decoration: none;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: 18px;
+    padding: 15px;
+}
+
+.menu a:hover{
+    background-color: #7D2729;  
+}
+
+.sidebar li{
+    list-style-type: none;
+    padding: 10px;
+}
+
+.sidebar{
+    background-color: #111;
+    padding: 10px;
+    color:white;
+    width: 22%;
+    height: 1050px;
+    float:left;
+}
+
+.sidebar ul li a{
+    text-decoration: none;
+    color:white;
+}
+
+.sidebar a:hover{
+    color:red;
+}
+
+.change{
+    background-color: white;
+    color:white;
+    padding:10px;
+    width: 75.3%;
+    height: 1040px;
+    float:right;
+    
+}
+
+.change header{
+    color: burlywood;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    font-size: 20px;
+    border-bottom: 1px solid #000;
+}
+
+.change .content{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 18px;
+    font-style: italic;
+    text-align: justify;
+}
+
+.change footer{
+    border-top: 1px solid #000;
+    float:right;
+}
+
+.page-bottom{
+    background-color: darkolivegreen;
+    padding: 15px;
+    height: 30px;
+    clear:left;
+    text-align: center;
+    font-family: "consolas";
+    color:white;
+    position: absolute;
+    margin-top: 1050px ;
+    width: 100%;
+}
+
+p{
+    color: black;
+}
+div{
+    color: black;
+}
+/*1.konu
+.flex-container{
+    width:90%;
+    height: 400px;
+    background-color: darkred;
+    display: flex;
+    align-items: flex-start; ince kutular halinde konumlandırır yüksekliğe göre
+    align-items: flex-end;
+    align-items: center;
+    align-items: stretch; bu kod ise dış dive yüksekliğine göre içerideki itemleri konumunu ayırıyor neredeyse tüm 
+    sutünü item nesnesine ayırıyor.
+}
+
+.item{
+    background-color: rgba(255,255,255,0.8);
+    width: 200px;
+    margin: 15px;
+}
+*/
+/*2.konu baseline
+.flex-container{
+    width:90%;
+    height: 400px;
+    background-color: darkred;
+    display: flex;
+    align-items: baseline; itemlerimizin büyüklükleri farklılaştı biri h1 biri h3 diğeri h6 ancak büyüklükleri farklı olsa bile
+    yatay düzenlemde tabanlarını baz alarak içerideki metni aynı konuma getirebiliriz
+}
+
+.item{
+    background-color: rgba(255,255,255,0.8);
+    width: 200px;
+    margin: 15px;
+}
+*/
+
+/*3.konu flex-wrap
+.flex-container{
+    width:100%;
+    height: 400px;
+    background-color: darkred;
+    display: flex;
+    flex-wrap: nowrap; kutuyu hizalarken eğer kutu %30 dan küçük veya büyük olma durumunda içinde bulunan nesneler kutunun dışında kalacaktır bu da mobil uyumlulukda sorun çıkaracaktır bunun yerine;
+    flex-wrap: wrap;
+    dış kutunun boyu küçüldükçe içerisindeki bulunan nesneler sığmayacağından nesneleri alt satıra geçiriyor
+}
+
+.item{
+    background-color: rgba(255,255,255,0.8); 
+    width: 200px;
+    margin: 15px;
+}
+*/
+
+/*lesson57.html*/
+/* part1
+.container{
+    overflow: auto;
+}
+
+.sidebar{
+    float:none;
+    width: auto;
+}
+
+.main{
+    margin-left: 5px;
+}
+
+.menu{
+    margin:0;
+    padding:0;
+}
+
+.item{
+    background:darkred;
+    border: 1px solid black;
+    border-radius: 3px;
+    list-style-type: none;
+    margin: 5px;
+    padding: 4px;
+}
+
+
+
+@media screen and (max-width:580px){
+    .item{
+        background-color: blue;
+    }
+}
+
+
+@media screen and (min-width:580px) {
+    .sidebar{
+        float: left;
+        width: 250px;
+    }
+}
+*/
+
+/*part2
+
+
+ul{
+    list-style-type: none;
+    border: 1px solid black;
+}
+
+ul>li>a{
+    text-decoration: none;
+    color:green;
+    padding:5px;
+    display:block;
+}
+
+@media screen and (max-width:699px) and (min-width: 520px){
+    ul>li>a{
+        text-decoration: overline;
+        color:red;
+    }
+}
+*/
+
+/*lesson59.html*/
+
+/*boş etiketlere css ile etki etmek için :empty pseudo classı kullanabiliriz
+p:empty{
+    background-color: darkgoldenrod;
+    padding: 20px;
+}
+*/
+
+/*:first-child etketi sayfada bulunan ilk elemente css ile etki etmemizi sağlar. Sayfada bulunan ilk etiketin p olması gerekiyor ki o zaman css ile etki edebiliriz ancak ilk element h2 olduğu için css ile etki edemeyeceğiz peki sayfada ilk p etiketine nasıl etki edebiliriz hemen aşağıda gösterelim.
+p:first-child{
+    border: 1px solid red;
+    background:darkolivegreen;
+    color:white;
+}
+*/
+/*first-of-type pseudo classı sayfamızda bulunan ilk p elementine etki etmemizi sağlar, first-child aksine bu element sayfada ilk sırada olmasına gerek yoktur.
+p:first-of-type{
+    border: 1px solid red;
+    background:darkolivegreen;
+    color:white;
+}
+*/
+
+/*yukarıdaki anlattıklarım last-child içinde geçerlidir*/
+/*:last-child etketi sayfada bulunan son elemente css ile etki etmemizi sağlar. Sayfada bulunan son etiketin p olması gerekiyor ki o zaman css ile etki edebiliriz ancak son element span olduğu için css ile etki edemeyeceğiz peki sayfada son p etiketine nasıl etki edebiliriz hemen aşağıda gösterelim.
+p:last-child{
+    border: 1px solid red;
+    background:darkolivegreen;
+    color:white;
+}
+*/
+/*last-of-type pseudo classı sayfamızda bulunan son p elementine etki etmemizi sağlar, last-child aksine bu element sayfada son sırada olmasına gerek yoktur.
+p:last-of-type{
+    border: 1px solid red;
+    background:darkolivegreen;
+    color:white;
+    padding:5px;
+}
+*/
+
+/*first-child: ilk elemente, last-child: son elemente peki ortadaki elementlere nasıl etki edeceğiz bunun cevabı da :nth-child pseudo codumuzda hemen aşağıda görelim*/
+/*nth-child sayfamızda bulunan aynı etiketler içinde kaçıncı etikete etki etmek istiyorsak o zaman kullanacağımız bir pseudo coddur
+p:nth-child(3){
+    border: 1px solid red;
+    background:darkolivegreen;
+    color:white;
+}
+*/
+
+
+/*not pseudo class'ı aşağıdaki kullanımın amacı şu dur p etiketi dışındakilere :not(p) şeklinde yazarak css ile etki sağlayabiliriz
+p{
+    border: 1px solid red;
+    background:darkolivegreen;
+    color:white;
+}
+
+:not(p){
+    border: 1px solid yellow;
+    background:orange;
+    color:black;
+}
+*/
+
+/*: not pseudo kodumuzun ikinci kullanım alanı ise koşuldur hemen aşağıda gösterelim*/
+/*aşağıdaki not kullanımın açıklaması şu şekilde p etiketlerine aşağıdaki kodları uygula ancak class'ı .prg olan p etiketine aşağıdaki kodları uygulama anlamındadır.
+p:not(.prg){
+    border: 1px solid red;
+    background:darkolivegreen;
+    color:white;
+}
+
+*/
+
+/*in-range pesudo classı input türü number olanlarda çalışır. in-range, inputta belirlediğimiz aralık boyunca css e etkide bulunur 1-18 sayı arasında yeşil renkte çerçeve atamasını sağladık. defterde daha ayrıntılı açıklaması bulunmaktadır.
+input:in-range{
+    border: 2px solid green;
+    padding: 5px;
+}
+*/
+
+/*lesson60.html*/
+
+/* ayrıntılarını defterde bulabilirsin
+p:nth-child(1){
+    color:red;
+}
+
+
+p:nth-of-type(1){
+    color:red;
+}
+*/
+
+/* ayrıntılarını defterde bulabilirsin
+p:nth-last-child(3){
+    color:blue;
+}
+
+
+p:nth-last-of-type(3){
+    color:blue;
+}
+*/
+
+/*
+p:only-of-type{
+    color:purple;
+}
+*/
+
+/*
+input:optional{
+    background-color: #333;
+}
+*/
+/*
+input:in-range{
+    border:2px solid green;
+}
+
+input:out-of-range{
+    border: 2px solid red;
+}
+*/
+
+/*lesson61.html*/
+
+/*
+input:read-only{
+    border: 1px solid red;
+    background-color: red;
+}
+
+input:read-write{
+    border: 1px solid green;
+    bacground-color:green;
+
+*/
+
+/*
+input:required{
+    background-color:red;
+    
+}
+*/
+
+/*
+:root{
+    border:1px solid black;
+}
+*/
+
+/*
+input:valid{
+    border:2px solid green;
+    font-size: 18px;
+}
+*/
+/*
+:target{
+    border: 2px solid red;
+    font-size: 18px;
+    background-color: #333;
+    color: white;
+    padding:5px;
+}
+*/
+
+/*lesson62.html*/
+/*
+img{
+    width: 400px;
+    height: 600px;
+}
+
+.fill{
+    object-fit: fill;
+}
+
+.contain{
+    object-fit: contain;
+}
+
+.scale-down{
+    object-fit: scale-down;
+}
+
+.cover{
+    object-fit: cover;
+}
+
+.none{
+    object-fit: none;
+}
+
+
+img{
+    width: 50%;
+    height: 100%;
+    float: left;
+    object-fit: contain;
+}
+*/
+
+
+/*lesson63.html*/
+
+/*
+.newspaper{
+    column-count: 3; /*kaç tane sütun olmasını buradan belirleriz
+    column-gap: 50px; /*sütünlar arası boşluğu ayarlamak için*/
+    /* column-rule-style: solid; /sütünlar arasına çizgiler çekmek için kullanırız
+    column-rule-width: 2px; /*çizdiğimiz çizginin kalınlığını belirlemek için kullanılır
+    column-rule-color: red; /*çizdiğimiz çizginin rengini belirlemek için kullanılır*/
+    /*yukarıda bulunan 3 kodu tek satıda yazabiliriz
+    column-rule: 1px solid red;
+    column-width: 300px; /*yukarıdaki column-gap ile birlikte kullanım durumunda bu kod etki etmeyecektir ancak column-width ile sütun genişliklerini ayarlayabiliyoruz.
+}
+
+.newspaper h2{
+    column-span: all; /*div içine yeni h2 ekleyince sütun içine dahil oluyordu başlık olmasına rağmen bu kod ile onu düzenliyoruz
+
+}
+
+*/
+/*
+div{
+    column-count: 3;
+    height:200px;
+}
+
+.newspaper1{
+    column-fill:auto; biz sütunların yüksekliğini 200px belirledik auto doldurması şu anlama gelmektedir 1.sütun 200px kadar dolacak daha sonra 2.sütuna geçeçek, bu işlem 3.sütunda da bu şekildedir.
+}
+
+.newspaper2{        
+    column-fill: balance; balance şekilde doldurması ise 3 e bölünmüş sütunda her sütüna eşit şekilde parağraf olmasını sağlamak dengeli 3 yerde de birbirine eşit sayıda yazı olsun anlamında
+}
+*/
+
+/*lesson64.html
+
+:root{
+    --main-bg-color:red;
+    --main-padding:10px;
+    --main-margin:15px;
+    --main-txt-color:white;
+}
+
+.special-div{
+    background-color: var(--main-bg-color);
+    margin: var(--main-margin);
+    color:var(--main-txt-color);
+    padding: var(--main-padding);
+}
+*/
+
+/*lesson65.html*/
+/*1.kısım
+.item1{
+    grid-area: header;
+}
+.item2{
+    grid-area: menu1;
+}
+.item3{
+    grid-area: main;
+}
+.item4{
+    grid-area: right1;
+}
+.item5{
+    grid-area: footer;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-areas: 
+    'header header header header header header'
+    'menu1 main main main right1 right1'
+    'menu1 footer footer footer footer footer';
+    grid-gap: 10px;
+    background-color: #2196f3;
+    padding:20px;
+}
+
+.grid-container > div{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 0px;
+    font-size: 32px;
+}
+*/
+
+/*2.kısım
+.grid-container{
+    display: grid;
+    /*display: inline-grid;
+    grid-template-columns: auto auto auto;
+    background-color: #2196f3;
+    padding:20px;
+    grid-column-gap: 50px;
+    grid-row-gap: 70px;
+    /*grid-gap: 50px 70px;
+}
+
+.grid-item{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding:20px;
+    font-size:32px;
+    border:1px solid black;
+}
+*/
+
+/*3.kısım
+.grid-container{
+    display: grid;
+    /*display: inline-grid;
+    grid-template-columns: auto auto auto ;
+    background-color: #2196f3;
+    padding:20px;
+    grid-gap:10px;
+    /*grid-gap: 50px 70px;
+}
+
+.grid-container>div{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding:20px;
+    font-size:32px;
+    border:1px solid black;
+}
+
+.item1{
+    grid-column-start: 1;
+    grid-column-end: 3;
+}
+*/
+
+
+/*lesson66.html
+.grid-container{
+    display: grid;
+    /*display: inline-grid;
+    /*
+    grid-template-columns: 10% 50% 10% auto;
+    grid-template-rows: 90px 200px;
+    
+    grid-template-columns: 50px 50px 50px;
+    background-color: #2196f3;
+    padding:20px;
+    grid-gap:10px;
+    /*grid-gap: 50px 70px;*/
+    /*justify-content: space-around;
+    align-content: space-evenly;
+    height:800px;
+}
+.grid-container>div{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding:20px;
+    font-size:32px;
+    border:1px solid black;
+}
+*/
+
+
+/*lesson67.html*/
+/*1.part
+.grid-container{
+    display: grid;
+    background-color: #2196f3;
+    padding: 10px;
+    grid-gap: 10px;
+}
+
+.grid-item{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size:32px;
+}
+
+.item1{
+    grid-column: 1;
+    grid-row: 1/span 3;
+      /*grid-row: 1/4; yukarıdaki ile aynı anlamdadır.
+}
+
+.item2{
+    grid-column: 2 / span 2;
+    /*grid-column: 2/4; yukarıdaki ile aynı anlamdadır.
+    grid-row: 1 ;
+}
+
+.item3{
+    grid-column: 2 / span 2;
+    /*grid-column: 2/4; yukarıdaki ile aynı anlamdadır.
+    grid-row: 2;
+}
+*/
+
+/*2.part
+.grid-container{
+    display: grid;
+    background-color: #2196f3;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-columns: auto auto auto auto auto auto;
+}
+
+.grid-container>div{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size:32px;
+}
+
+.item8{
+    grid-area: 1 / 2 / 5 / 6;
+}
+*/
+
+/*3.part
+.grid-container{
+    display: grid;
+    background-color: #2196f3;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-areas: 'myArea myArea myArea myArea myArea';
+}
+
+.grid-container>div{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size:32px;
+}
+
+.item1{
+    grid-area: myArea;
+}
+*/
+
+/*4.part*/
+.grid-container{
+    display: grid;
+    background-color: #2196f3;
+    padding: 10px;
+    grid-gap: 10px;
+    grid-template-areas: 'myArea myArea...' 'myArea myArea...';
+}
+
+.grid-container>div{
+    background-color: rgba(255,255,255,0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size:32px;
+}
+
+.item1{
+    grid-area: myArea;
+}

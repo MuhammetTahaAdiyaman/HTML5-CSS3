@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 18 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimiz lesson 16 ve 17.devamı şeklindedir html5 ile gelen input attribute'lerine devam edeceğiz-->
+            <!--şimdi bu dersimizin ilk attribute olan width and height ile başlayalım. biz bu attribute ile eklediğimiz resim inputunun genişliğini yüksekliğini ayarlayabiliyoruz
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>Kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adınız: <input type="text" id="uName" name="uName"></p>
+                <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+                <p><input type="submit" value="Gönder"></p>
+                <p><input type="image" id="Btn" name="Btn" src="../HTML5andCSS3/submit-button-png-25792.png" width="150" height="150" ></p>
+            </form>
+            -->
+
+            <!--şimdi 2.attributemiz olan max and min attribute geçelim. min ve max attribute ile aralık değerleri verebiliyoruz örneğin takvimde tarih aralıklarını belirlerken number inputu kullanarak kullanıcıdan yaş almak istersek orada da min ve max yaş aralığını belirlerken kullanabiliriz aşağıda örnek olarak gösterelim
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>Kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adınız: <input type="text" id="uName" name="uName"></p>
+                <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+                <p><input type="date" name="myDate" id="myDate" max="2021-12-30" min="2019-12-30" placeholder="Lütfen bir tarih seciniz"></p>
+                <p><input type="number" name="myNumber" id="myNumber" max="50" min="10" placeholder="Lütfen yaşınızı seçiniz"></p>
+                <p><input type="submit" value="Gönder"></p>
+            </form>
+            -->
+
+            <!--yukarıda number inputundan örnek olarak da yaşdan bahsetmişken bir diğer inputumuz olan stepden de hemen bahsedelim. step attribute adım sayısını belirtiyorum yani kaçar kaçar artmasını istiyorum örneğin 10 yaş ile 50 yaş arasını aralık olarak belirledik ya 10 dan 50 ye 1er 1er artacak eğer ben 10ar 10ar artmasını istersem eğer step attribute kullanmam gerek aşağoda gösterelim
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>Kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adınız: <input type="text" id="uName" name="uName"></p>
+                <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+                <p><input type="date" name="myDate" id="myDate" max="2021-12-30" min="2019-12-30" placeholder="Lütfen bir tarih seciniz"></p>
+                <p><input type="number" name="myNumber" id="myNumber" max="50" min="10" placeholder="Lütfen yaşınızı seçiniz" step="10"></p>
+                <p><input type="submit" value="Gönder"></p>
+            </form>
+            -->
+
+            <!--bir diğer attribute olan multiple geçelim. multiple önceki derslerde görmüştük aslında file inputunda eğer sunucuya dosya göndermek istediğimizde tek tek dosyaları seçiyorduk birden fazla dosyayı seçebilmemiz için multiple attribute kullanıyorduk. default olarak birer dosya olarak seçiyor aşağıda ikisinide alt alta gösterelim
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>Kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adınız: <input type="text" id="uName" name="uName"></p>
+                <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+                <p><input type="date" name="myDate" id="myDate" max="2021-12-30" min="2019-12-30" placeholder="Lütfen bir tarih seciniz"></p>
+                <p><input type="number" name="myNumber" id="myNumber" max="50" min="10" placeholder="Lütfen yaşınızı seçiniz" step="10"></p>
+                <!--default
+                <p><input type="file" name="myFiles" id="myFiles"></p>
+                <!--multiple
+                <p><input type="file" name="myFiles" id="myFiles2" multiple></p>
+                <p><input type="submit" value="Gönder"></p>
+            </form>
+            -->
+
+            <!--şimdi gelelim bir diğer attribute pattern. bu attribute ile regular expression yani düzenli ifadeleri kullanabiliriz. örneğin ben inputuma 2 harf girilmesini istiyorum bunu pattern attribute ile koşullu şekilde sağlayabilirim title ile de o inputa 2 harf girilmesinin amacını belirteceğiz. defterde ayrıntılı olarak anlatışmıştır.
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>Kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adınız: <input type="text" id="uName" name="uName"></p>
+                <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+                <p><input type="date" name="myDate" id="myDate" max="2021-12-30" min="2019-12-30" placeholder="Lütfen bir tarih seciniz"></p>
+                <p><input type="number" name="myNumber" id="myNumber" max="50" min="10" placeholder="Lütfen yaşınızı seçiniz" step="10"></p>
+                <p><input type="text" name="Code" id="Code" pattern="[A-Za-z]{2}" title="Lutfen 2 harfli ülke plaka kodunu giriniz" placeholder="plaka kodu"></p>
+                <p><input type="submit" value="Gönder"></p>
+            </form>
+            -->
+
+            <!--bir diğer input attribute ise placeholde. bu attribute ile geçmiş derslerde aşinayız zaten input arkasına bir açıklama yazısı eklemek istersek placeholder kullanacağız yukarıdaki kodlarda bolca kullandım örnek olarak buraya yapıştırıyorum
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>Kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adınız: <input type="text" id="uName" name="uName"></p>
+                <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+                <p><input type="date" name="myDate" id="myDate" max="2021-12-30" min="2019-12-30" placeholder="Lütfen bir tarih seciniz"></p>
+                <p><input type="number" name="myNumber" id="myNumber" max="50" min="10" placeholder="Lütfen yaşınızı seçiniz" step="10"></p>
+                <p><input type="text" name="Code" id="Code" pattern="[A-Za-z]{2}" title="Lutfen 2 harfli ülke plaka kodunu giriniz" placeholder="plaka kodu"></p>
+                <p><input type="submit" value="Gönder"></p>
+            </form>
+            -->
+
+            <!--son attributemiz olan required. Bu attributemiz ise gerekli anlamındadır. Yani inputların doldurulması gerekli alanları belirlememiz amacıyla kullanacağız. örnek olarak *ile işaretli alanların doldurulması zorunludur ifadesini gerçekleştirir
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>Kullanıcı Adı: <input type="text" name="userName" id="userName" required></p>
+                <p>Adınız: <input type="text" id="uName" name="uName" required></p>
+                <p>E-posta: <input type="email" id="userEmail" name="userEmail" required    ></p>
+                <p><input type="date" name="myDate" id="myDate" max="2021-12-30" min="2019-12-30" placeholder="Lütfen bir tarih seciniz"></p>
+                <p><input type="number" name="myNumber" id="myNumber" max="50" min="10" placeholder="Lütfen yaşınızı seçiniz" step="10"></p>
+                <p><input type="submit" value="Gönder"></p>
+            </form>
+            -->
+        </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

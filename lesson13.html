@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 13  </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimizde html5 ile gelen yeni form nesnelerine bakacağız-->
+            <!--ilk form nesnemiz olan dataliste bakalım. datalist: kullanıcıya hızlıca bir şeyler seçtirmek istediğmiz zaman kullanırız. örneğin yaş girmesini istiyoruz ve datalist ile en çok girilen yaşları listeleyebiliriz aşağıda gösterelim
+            <form>
+                <input name="language" id="languages">
+                <datalist id="languages">
+                    <option value="HTML">
+                    <option value="CSS">
+                    <option value="HTML5">
+                    <option value="CSS3">
+                    <option value="JAVASCRIPT">
+                </datalist>
+            </form>
+            -->
+           <!--kısaca anlatmak gerekirse çalışmadı ama kullanıcı input yerine mausla tıklayınca yukarıdaki optionlar çıkacak örneğin H yazınca HTML VE HTML5 ÇIKACAK en çok girilen gibi veya ipucu olsun diye düşünebiliriz-->
+            <!--şimdi ikinci form nesnemiz ise keygen bu da firefox da çalışıyor sadece chrome da artık çalıştırmıyor ama şöyle ki kullanım
+            amacını yazalım. keygende 2 dereceli güvenlik önlemi var çok güvenli, orta güvenli. Burada ne yapıyor keygen bir şifreyi sunucuya gönderiypr
+            bir şifreyi ise tarayıcıda tutuyor. Daha sonra siz bu şifreleri karşılaştırıyorsunuz örneğin oturum açma, oturum açan kişi ile girişi yapan
+            kişi aynı kişimi onu kontrol edip ona göre güvenlik önlemi alabilirsiniz. yapısı aşağıdaki  gibi
+            <form>
+                Kullanıcı Adı: <input type="text" name="username" id="username"><br>
+                Güvenlik Düzeyi: <keygen name="security">
+            </form>
+            -->
+
+            <!--şimdi son yeni olan form nesnesine gelelim. output. bu nesne ile çıktılarımızı alabiliyoruz. aşağıda defterde ayrıntılı olarak anlattığım bir toplama işlemi örneği gerçekleştirelim sonucunu ise output ile alalım.-->
+            <form oninput="Calculate.value=parseInt(Number1.value)+parseInt(Number2.value)">
+                0 <input type="range" name="Number1" id="Number1" value="50"> 100 <br>
+                +<br>
+                <input type="number" name="Number2" id="Number2" value="50">
+                =<br>
+                <output style="border: 1px solid black;" name="Calculate" for="Number1 Number2"></output> 
+            </form>
+            <!--oninput da Number1 value ile Number2 valuesını toplayıp Calculatein valuesine atadık ve output ile Calculate'i bastırdık.
+                Önemli nokta biz toplama işlemi yapabilmemiz için değerleri(value) baz almamız gerekiyor. Bu değerde haliyle integer olması
+                gerek bunuda parseInt ile yapıyoruz. Defterde daha ayrıntılı şekilde açıkladım. eğer anlamazsan lesson55 i izle tekrardan.-->
+        </section>
+
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

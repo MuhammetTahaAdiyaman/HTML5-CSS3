@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 21 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimizde gradyan renklendirme ve grafiğe resim eklemeyi göreceğiz ilk olarak gradiyan renkle başlayalım-->
+            <!--gradiyan renk anlatımını fill ile oluşturulmuş metin, daire ve kare çizimleri üzerine göstereceğim ilk olarak metin üzerinde gösterelim-->
+            <canvas id="newCanvas" width="700" height="300" style="border:1px solid #bbb;"></canvas>
+            <!--aşağıdaki linear yani doğrusal gradiant örneğidir
+            <script>
+                var myCanvas = document.querySelector("#newCanvas").getContext("2d");
+                myCanvas.font="48px Arial";
+                /*aşağıdaki kod yatay yönde renk değişimi gradiant
+                var grd = myCanvas.createLinearGradient(0,0,450,0); (x,y,x1,y1)*/
+                /*aşağıdaki kod düşey yönde renk değişimi gradiant*/
+                var grd = myCanvas.createLinearGradient(0,0,0,250);
+                grd.addColorStop(0,"red");
+                grd.addColorStop(1,"black");
+                myCanvas.fillStyle=grd;
+                myCanvas.fillText("Taha Adıyaman",80, 120)
+            </script>
+            -->
+            <!--aşağıdaki linear gradiant örneğidir dikdörtgen üzerinde gösterimdir
+            <script>
+                var myCanvas = document.querySelector("#newCanvas").getContext("2d");
+                var grd=myCanvas.createLinearGradient(0,0,490,0);
+                grd.addColorStop(0,"red");
+                grd.addColorStop(1,"black");
+                myCanvas.fillStyle=grd;
+                myCanvas.fillRect(50,50,250,100);
+            </script>
+            -->
+
+            <!--şimdi ise bu dersin 2. konusu olan grafiğe resim eklemeye gelelim-->
+            <script>
+                var myCanvas = document.querySelector("#newCanvas").getContext("2d");
+                /*ilk önce bir resim değişkeni oluşturalım ve yeni bir resim nesnesi olduğunu belirtelim*/
+                var picture = new Image();
+                /*resim değişkeni sayfa yenilendiği anda fonksiyon içinde yazan kodları çalıştır diyoruz*/
+                picture.onload=function(){
+                    myCanvas.drawImage(picture,0,0);
+                    myCanvas.beginPath();
+                    myCanvas.lineWidth="5";
+                    myCanvas.strokeStyle="black";
+                    myCanvas.moveTo(60,10);
+                    myCanvas.lineTo(60,300);
+                    myCanvas.stroke();
+                    myCanvas.beginPath();
+                    myCanvas.lineWidth="5";
+                    myCanvas.strokeStyle="black";
+                    myCanvas.moveTo(60,295);/*yukarıda ilk lineTo ne yaptıysak burada moveTo ya onu yazacağız ki kaldığımız yerden devam edelim*/
+                    myCanvas.lineTo(700,295);
+                    myCanvas.stroke();
+                    myCanvas.beginPath();
+                    myCanvas.lineWidth="4";
+                    myCanvas.strokeStyle="red";
+                    myCanvas.moveTo(60,295);/*yukarıda ikinci lineTo ne yaptıysak burada moveTo ya onu yazacağız ki kaldığımız yerden devam edelim*/
+                    myCanvas.lineTo(100,255);
+                    myCanvas.lineTo(180,255);
+                    myCanvas.lineTo(350,60);
+                    myCanvas.lineTo(430,60);
+                    myCanvas.lineTo(430,35);
+                    myCanvas.lineTo(520,35);
+                    myCanvas.stroke();
+                }
+                picture.src="grafik.jpg";
+            </script>
+        </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 17 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimiz lesson16nın devamı niteliğindedir burada da html5 ile gelen input attributelerine devam edeceğiz. defterde bu derslerin daha ayrıntılı açıklamaları mevcuttur-->
+            <!--bu dersin ilk attribute olan formenctype ile başlayalım. bu özelliği önceki derslerde görmüştük file inputunu etkin kılmak için form etiketine enctype="multiple/form-data" özelliğini eklememiz gerekiyordu şimdi biz bunu inputa da ekleyebiliyoruz şöyle yapalım 2 buton yapalım ilk buton kullanıcı adı, adı ve maili sadece göndersin ikinci buton ise dosya seçimli olarak göndersin
+            <form action="../HTML5andCSS3/php/send.php" method="post" id="myForm">
+                <p>kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adı: <input type="text" name="uName" id="uName"></p>
+                <p>E-posta: <input type="email" name="userEmail" id="userEmail"></p>
+                <p><input type="file" name="myFiles" id="myFiles"></p>
+                <p><input type="submit" value="buton1"></p>
+                <p><input type="submit" value="buton2" formenctype="multipart/form-data"></p>
+            </form>
+            -->
+
+            <!--dersimizin ikinci attribute ise formmethod. form etiketinden de sürekli gördüğümüz get ve post vardır get urlde verileri gösterir post ise url de verileri gizler. şimdi şöyle bir şey yapalım formun kendi methodunu get yapalım ve buton 1 e tıklayınca get methodu ile send.php ye gönderelim. 2.butona tıkladığımızda ise verileri post methodu ile send2.php ye gönderelim
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adı: <input type="text" name="uName" id="uName"></p>
+                <p>E-posta: <input type="email" name="userEmail" id="userEmail"></p>
+                <p><input type="submit" value="buton1"></p>
+                <p><input type="submit" value="buton2" formaction="../HTML5andCSS3/php/send2.php" formmethod="post"></p>
+            </form>
+            -->
+
+            <!--dersimizin üçüncü methodu olan formnovalidate ile devam edelim. Aslında bu attribute de geçen derslerimizde kullanmıştık eğer url veya mail gibi inputlar bize istenildiği gibi girimeldiğinde uyarı veriyordu bir nevi doğrulama görevi açık oluyordu işte biz bunu kapatmak için form etiketinde novalidate olarak kullanıyorduk artık html5 ile inputa da formnovalidate şeklinde attribute olarak ekleyebiliriz şimdi şöyle bir şey yapalım formumuzu 1.buton ile göndermeye çalıştığımızda uyarı alalım mail inputundan ama 2.inputumuz ile göndermeye çalıştığımızda doğrulama özelliği kapansın uyarı vermesin olarak ayarlayalım.
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adı: <input type="text" name="uName" id="uName"></p>
+                <p>E-posta: <input type="email" name="userEmail" id="userEmail"></p>
+                <p><input type="submit" value="buton1"></p>
+                <p><input type="submit" value="buton2" formaction="../HTML5andCSS3/php/send2.php" formmethod="post" formnovalidate></p>
+            </form>
+            -->
+
+            <!--bu dersimizin son attribute gelelim formtarget attribute aslında buna da aşinayiz xhtml ve css kursunda linklere tıklayınca ayrı bir sayfada açılması için target=_blank ile yapıyorduk burada da inputlara, formlara atayabiliyoruz html5 ile. şimdi şöyle birşey yapalım buton 1 e tıklayınca kendi sayfasında send.phpye gitsin ama buton2 ye tıklayınca send2.php ye yeni sekmede açılarak gitsin
+            <form action="../HTML5andCSS3/php/send.php" method="get" id="myForm">
+                <p>kullanıcı Adı: <input type="text" name="userName" id="userName"></p>
+                <p>Adı: <input type="text" name="uName" id="uName"></p>
+                <p>E-posta: <input type="email" name="userEmail" id="userEmail"></p>
+                <p><input type="submit" value="buton1"></p>
+                <p><input type="submit" value="buton2" formaction="../HTML5andCSS3/php/send2.php" formmethod="post" formnovalidate formtarget="_blank"></p>
+            </form>
+        -->
+
+        <!--NOT!!!= Bu ve bundan önceki derslerde burada yazdığım kodların ayrıntılı olarak açıklamasını deftere not aldım
+        eğer buradan bir şey anlamazsan deftere açıp orada daha güzel şekilde anlattım unutma!!!!-->
+        </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

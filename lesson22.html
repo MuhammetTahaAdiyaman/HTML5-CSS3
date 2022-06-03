@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 22 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimizde canvas ile son bir örnek verip canvas konusunu burada bitereceğim artık bir diğer grafik etiketimiz olan svg ye geçeceğim-->
+            <!--şimdi canvas ile üçgen çizdirelim
+            <canvas id="newCanvas" height="300" width="700" style="border: 1px solid #bbb;"></canvas>
+            <script>
+                var myCanvas = document.querySelector("#newCanvas").getContext("2d");
+                myCanvas.fillStyle="darkolivegreen";
+                myCanvas.strokeStyle="black";
+                myCanvas.beginPath();
+                myCanvas.moveTo(60,200);
+                myCanvas.lineTo(200,200);
+                myCanvas.lineTo(130,120);
+                myCanvas.fill();   
+            </script>
+            -->
+
+            <!--canvası bitirdiğimize göre şimdi gelelim ikinci grafik etiketimiz olan svg ye. svg vektörel grafiklerdir. xml tabanlıdır.-->
+            <!--HTML5 SVG
+            1-svg circle (dairesel çizim)
+            2-svg rectangle(dikdörtgen çizim)
+            3-svg rounded rectangle(kenarları yuvarlatılmış dikdörtgen)
+            4-svg star(yıldız)
+            5-svg logo konularını göreceğiz bu dersimizde-->
+
+            <!--şimdi svg de ilk konumuza geçelim dairesel bir çizim oluşturalım
+            <svg width="600" height="300" style="border:1px solid #bbb;"> <!--temel svg etikedir
+                <!--şimdi dairesel çizim yapacağımız için circle etiketi ile başlayalım xml tabanlı olduğunu unutma bundan dolayı javascripte yazdığımız kodları burada attribute olarak atayacağız bir de etiketi "/>" böyle kapatıyoruz.
+                <circle cx="100" cy="100" r="80" stroke="black" stroke-width="5" fill="darkolivegreen"/> 
+                <!--cx =  xkoordinatı, cy=y koordinatı, fill= dolgu rengi, stroke= çizgi rengi
+            </svg>-->
+
+            <!--şimdi scg de ikinci konumuza gelelim hızlı bir şekilde dikdörtgen yapalım
+            <svg width="600" height="300" style="border:1px solid #bbb;"> 
+               <!--dikdörtgen çizdirmek için rect etiketini kullanırız rectangle dan geliyor-->
+               <!--yukarıdaki attribute gibi de yazabiliriz
+                <rect width="300" height="150" fill="darkolivegreen" stroke="black" stroke-width="4" opacity="1" x="80" y="80"/>-->
+               <!--bu verdiğimiz attributeleri style attribute ile css olarak da atayabiliriz
+               <rect width="300" height="150" style="fill:darkolivegreen; stroke:black; stroke-width:4; opacity:1;"  x="80" y="80"/>
+            </svg>
+            -->
+
+            <!--peki biz dikdörten yaptık kenarlarının daha oval hale getirebilir miyiz? evet bunu da raunded rectangle anlamına gelen rx ve ry ile getirebiliriz
+            <svg width="600" height="300" style="border:1px solid #bbb;"> 
+                
+                <rect width="300" height="150" style="fill:darkolivegreen; stroke:black; stroke-width:4; opacity:1;"
+                  x="80" y="80" rx="10" ry="10"/>
+
+            </svg>
+            -->
+
+            <!--şimdi ise bir diğer svg ile yıldız çizdirme olayına gelelim burada ki kodlarda bazı şeyler var ayrıntılı olarak defterde açıkladım(fill-rule, points gibi)
+            <svg width="600" height="300" style="border:1px solid #bbb;">
+                <!--yıldız çizdirmek için polygon etiketini kullanacağız çokgen anlamına gelmekte noktalara ihtiyacımız var burada direkt tam noktalırını vereceğim
+                <polygon points="100, 10 40, 198 190, 78 10, 78 160, 198" style="fill: brown; stroke: #F00; stroke-width: 4; fill-rule: evenodd;"/>
+            <!--fill-rule= evenodd yapınca yıldızımızın içi boş olmasını sağlıyor
+            </svg>
+            -->
+
+            <!--şimdi ise bir elipse oluşturalım. 2.aşamada bu elips içine bir metin ekleyelim. 3.aşamada ise bu elipsi gradyan olarak renklendirelim
+            <svg width="600" height="300" style="border:1px solid #bbb;"> 
+                <!--elips oluşturmak için ellipse etiketini kullanacağız
+                <ellipse cx="180" cy="100" rx="150" ry="85" fill="darkolivegreen"/>
+                <!--cx = x koordinatı cy= y koordinatı rx= x yarıçapı ry=y çarıçapı burada elips olduğu için x yarı çapı y yarıçapından büyüj olması gerek
+                eğer rx = ry olsaydı daire çizmiş olacaktık zaten dairede de tek yarıçap kullanıyoruz
+            </svg>
+            -->
+            <!--şimdi elipsin 2.aşaması olan içine metin ekleyelim bir metin etiketi kullanıp x ve y koordinatlarını kullanarak elips içine yerleştireceğiz
+            <svg width="600" height="300" style="border:1px solid #bbb;"> 
+               
+                <ellipse cx="180" cy="100" rx="150" ry="85" fill="darkolivegreen"/>
+                <text fill="#FFF" font-size="40" x="110" y="110" font-family="verdana">
+                    HTML5
+                </text>
+            </svg>
+            -->
+            <!--3.aşama artık bu elipsimize gradyan renklendirme yapacağız ilk önce boyamızı oluşturup boyamızın id sini ellipse etiketinde kullanacağız-->
+            <svg width="600" height="300" style="border:1px solid #bbb;"> 
+                <!--boyamızı defs etiketi içinde linearGradient etiketimiz ile oluşturacağız-->
+                <defs>
+                    <linearGradient id="grd" x1="0%" y1="0%" x2="100%" y2="0%">
+                        <stop offset="0%" style="stop-color: red; stop-opacity: 1;"/>
+                        <stop offset="100%" style="stop-color: black; stop-opacity: 1;"/>
+
+                    </linearGradient>
+                </defs>
+                <ellipse cx="180" cy="100" rx="150" ry="85" fill="url(#grd)" />
+                <text fill="#FFF" font-size="40" x="110" y="110" font-family="verdana">
+                    HTML5
+                </text>
+            </svg>
+        </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 19 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimizde html5 ile gelen grafik etiketlerinde olan canvas'a geçeceğiz.-->
+            <!--
+                1-drawImage() - canvas içine resim yükler.
+                2-beginPath() - yeni çizime başlar.
+                3-fillRect() - dikdörtgen çizer.
+                3-fillStyle() - dolgu özellikleri ayarı.
+                4-moveTo() - çizimin x ve y koordinatlarını belirler.
+                5-lineTo() - çizgiyi çizmek için kullanılır.
+                6-closePath() - ucu açık çizimler kapatılır.
+            -->
+            <canvas id="newCanvas" width="400" height="300" style="border:1px solid #bbb"></canvas>
+            <!--canvas grafiklerini çizebilmek için javascriptten yararlanacağız
+            <script>
+                /*ilk önce bir değişken oluşturalım ve yukarıda oluşturduğumuz canvasa ulaşmaya çalışalım yani*/
+                var myCanvas = document.querySelector("#newCanvas"); /*burada canvasda oluşturduğum id ye ulaştım ve myCanvas isimli oluşturduğum değişkene atadım*/
+                
+                /*içeriği oluşturmak içinde bir değişken oluşturalım ve bu değişkene ilk oluşturduğum değişkeni atamalıyım*/
+                var content = myCanvas.getContext("2d"); /*içeriğimin 2d olacağını belirrtim*/
+
+                /*şimdi içeriğimizin değişkenini oluşturduktan sonra içeriğimizi oluşturmaya ilk önce bir iç dolgu rengi verelim*/
+                content.fillStyle="	#ffffff";
+                /*bu içeriğimizi kare yapmak istiyorum o zaman dikdörtgen oluşturucu ile yapalım */
+                content.fillRect(25,35,64,64); /*(x,y,width,height)*/
+
+                /*gördüğümüz üzere kareyi oluşturduk şimdi bu kareye bir çerçeve oluşturmak istiyorum öncelikle rengini belirleyelim*/
+                content.strokeStyle="#000000";
+                /*çerçevemizin kenar genişliğini hemen ayarlayalım*/
+                content.lineWidth="5";
+                /*şimdi ise çerçevemizi çizdirelim*/
+                content.strokeRect(25,35,64,64);
+
+            </script>
+        -->
+            <!--şimdi yukarıda dikdörtgen yapmayı gösterdik, şimdi anlatacağımız bir diğer konu olan moveTo() ve lineTo() konusuna gelelim
+            <script>
+                var myCanvas = document.querySelector("#newCanvas");
+                var content = myCanvas.getContext("2d");
+
+                /*burada ise dikdörtgen değil içerik kısmında çizgiler çizmeyi öğreneceğiz */
+                content.moveTo(0,0) /*moveTo = nereden başlayacağımızı belirtiyoruz*/
+                content.lineTo(400,300) /*lineTo =  nereye doğru çizeceğimizi belirtiyoruz*/
+                content.lineWidth="4"; /*çizgimizin genişliğini ayarlıyoruz */
+                content.strokeStyle="white"; /*çizgimizin rengini ayarlıyoruz */
+                content.stroke(); /*çizgimizi bununla çizdiriyoruz*/
+                /*burada da bir çizgi nasıl çizilir bunu gördük aşağıda iki farklı çizgi çizmeye çalışalım*/
+            </script>
+
+        -->
+            <script>
+                var myCanvas = document.querySelector("#newCanvas");
+                var content = myCanvas.getContext("2d");
+
+                content.moveTo(0,0);
+                content.lineTo(200,150)
+                content.lineWidth="4";
+                content.strokeStyle="white";
+                content.stroke();
+
+                content.beginPath();
+
+                content.moveTo(400,0);
+                content.lineTo(200,150);
+                content.lineWidth="4";
+                content.strokeStyle="black";
+                content.stroke();
+
+                content.beginPath();
+                
+                content.moveTo(400,300);
+                content.lineTo(200,150);
+                content.lineWidth="4";
+                content.strokeStyle="orange";
+                content.stroke();
+
+                content.beginPath();
+
+                content.moveTo(0,300);
+                content.lineTo(200,150);
+                content.lineWidth="4";
+                content.strokeStyle="aqua";
+                content.stroke();
+
+    </script>    
+
+
+        </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

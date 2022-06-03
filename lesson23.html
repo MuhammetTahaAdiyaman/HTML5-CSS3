@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 23 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimizde html5 de sayfamıza nasıl video ekleriz bunu göreceğiz hızlıca kodumuza geçelim
+            <video src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" width="600"></video>-->
+            <!--yukarıdaki etiketi ekledik ama ne oynat tuşu var ne durdur tuşu yani control elemanları yok bunun için html5 ile gelen controls attribute kullanacağız
+            <video src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" width="600" controls></video>-->
+            <!--gördüğümüz üzere controls attribute ile videomuzun kontrol düğmelerini getirmiş olduk-->
+            <!--peki mp4 ü desteklemeyen bir tarayıcıda sitemiz açılmış olabilir bu noktada ne yapacağız bunun için source etiketini kullanacağız
+                <video width="600" controls>
+                    <source src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" type="video/mp4">
+                </video>-->
+                <!--şimdi neden bu video etiketine ihtiyacımız var neden soruce yazıp kurtulmadık şundan dolayı eğer tarayıcı mp4 formatını çalıştırmıyız diyelim ki sadece ogg formatını çalıştırıyor o zaman şu şekilde yaparız
+                <video width="600" controls>
+                    <source src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" type="video/mp4">
+                    <source src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.ogg" type="video/ogg">
+                </video>-->
+
+            <!--şimdi gelelim sayfa açılır açılmaz videomun başlamısını istersem eğer autoplay attribute kullanmam gerek
+            <video width="600" controls autoplay>
+                <source src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" type="video/mp4">
+            </video>-->
+
+            <!--şimdi ise video bittiğinde videonun tekrar tekrar sonsuz kere başlaması için ise loop attribute ile yaparız
+            <video width="600" controls autoplay loop>
+                <source src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" type="video/mp4">
+            </video>-->
+
+            <!--videomuza kapak görseli veya başlangıç resmi ekleyebilirim. Bunu ise "poster" attribute ile yapabiliriz
+            <video width="600" controls autoplay loop poster="../HTML5andCSS3/grafik.jpg">
+                <source src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" type="video/mp4">
+            </video>-->
+
+
+            <!--şimdi ise videomuza butonlarla müdahale etmeye. javascript kullanarak-->
+            <div style="text-align: center;">
+            <video width="600" controls id="myVideo">
+                <source src="../HTML5andCSS3/HTML ve CSS Ders 17 outline, max width, min width, max height, min height komutları.mp4" type="video/mp4">
+            </video>
+                <p>
+                    <button onclick="playPause();">Oynat/Durdur</button>
+                    <button onclick="big();">Büyük Ekran</button>
+                    <button onclick="small();">Küçük Ekran</button>
+                    <button onclick="normal();">Normal Ekran</button>
+                </p>
+            </div>
+            <script>
+                let newVideo = document.querySelector("#myVideo");
+                function playPause(){
+                    if(newVideo.paused){
+                        newVideo.play();
+                    }
+                    else{
+                        newVideo.pause();
+                    }
+                }
+                function big(){
+                    newVideo.width=800;
+                }
+                function small(){
+                    newVideo.width=400;
+                }
+                function normal(){
+                    newVideo.width=600;
+                }
+            </script>
+            </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

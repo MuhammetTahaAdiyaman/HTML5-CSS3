@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 16 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+    <!--bu dersimizde html5 ile gelen input attributelerine bakacağız-->            
+    <!--ilk attributemiz olan autofocus attribute ile başlayalım. autofocus attribute: sayfaya girer girmez ilgili inputa odaklanmış şekilde açılacaktır yani metin kutusu kullanıma hazır şekilde yanıp sönecektir aşağıda hemen gösterelim. 
+        <form action="#" id="myForm" method="post">
+            <p>Kullanıcı Adı: <input type="text" id="userName" name="userName" autofocus></p>
+            <p> Adı: <input type="text" id="uName" name="uName"></p>
+            <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+            <p><input type="submit" value="Gönder"></p>
+        </form>   
+    -->   
+    <!--ikinci attributemiz olan novalidate attribute bakalım. novalidate attribute biz email veya url inputlarında istenildiği gibi .com veya @ koymadığımızda bizi uyarıyordu yani bir nevi doğrulama yapıyordu eğer biz formumuzda bu şekilde doğrulama yapılmasını istemiyorsak ilgili inputa da olur forma da olur novalidate attribute kullanmamız gerek aşağıda gösterelim.
+        <form action="#" id="myForm" method="post" novalidate>
+            <p>Kullanıcı Adı: <input type="text" id="userName" name="userName" autofocus></p>
+            <p> Adı: <input type="text" id="uName" name="uName"></p>
+            <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p> 
+            <p><input type="submit" value="Gönder"></p>
+            <!--gördüğümüz üzere email inputu novalidate attribute sonrası uyarı vermiyor yani doğrulama istemiyor.
+        </form>  
+    --> 
+    
+    <!--şimdi gelelim üçüncü attribute olan form attribute. Bu attributeı defterde ayrıntılı olarak açıkladım kısaca burada da açıklamak gerekirse form dışında kullandığımız inputu artık bu attribute sayesinde forma dahil edebileceğiz kural şu "form="formid" olarak eklenilmesi gerekmektedir.
+    <form action="../HTML5andCSS3/php/send.php" id="myForm" method="post">
+        <p>Kullanıcı Adı: <input type="text" id="userName" name="userName" autofocus></p>
+        <p> Adı: <input type="text" id="uName" name="uName"></p>
+        <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+        <p><input type="submit" value="Gönder"></p>
+    </form> 
+    -->
+    <!--şimdi kullanıcı adını form dışına alalım.  
+    <form action="../HTML5andCSS3/php/send.php" id="myForm" method="post">
+        <p>Kullanıcı Adı: <input type="text" id="userName" name="userName" autofocus></p>
+        <p> Adı: <input type="text" id="uName" name="uName"></p>
+        
+        <p><input type="submit" value="Gönder"></p>
+    </form> 
+    <p>E-posta: <input type="email" id="userEmail" name="userEmail"></p>
+    gördüğümüz üzere kullanici adı ve adıni send.php ye göndermiş ancak maili göndermemiş neden çünkü formun dışına aldık artık html5 ile form dışında kalan inputu forma bağlayabileceğimizden bahsetmiştik form etiketi ile aşağıda hemen bunuda örnek olarak gösterelim
+    <form action="../HTML5andCSS3/php/send.php" id="myForm" method="post">
+        <p>Kullanıcı Adı: <input type="text" id="userName" name="userName" autofocus></p>
+        <p> Adı: <input type="text" id="uName" name="uName"></p>
+        
+        <p><input type="submit" value="Gönder"></p>
+    </form> 
+    <p>E-posta: <input type="email" id="userEmail" name="userEmail" form="myForm"></p>
+    -->
+    <!--gördüğümüz üzere form etiketi ile form dışında bile olsa inputu forma dahil edebiliyoruz ve send.php de email inputu bilgilerini send.php ye başarılı şekilde göndermiş oluyoruz-->
+    
+    
+    <!--şimdi ise bu dersin son attribute olan formaction attributine. form etiketi içinde olan action attribute aşinalığımız olan bu attribute ile yönlendirme işlemi yapıyoruz hemen buna örnek için send2.php oluşturalım ve ek bir tane daha submit butonu oluşturalım ikinci submite formaction uygulayalım send2.php ye yönlendirelim-->
+    <form action="../HTML5andCSS3/php/send.php" id="myForm" method="post" target="_blank">
+        <p>Kullanıcı Adı: <input type="text" id="userName" name="userName" autofocus></p>
+        <p> Adı: <input type="text" id="uName" name="uName"></p>
+        
+        <p><input type="submit" value="Gönder"></p>
+        <p><input type="submit" value="action" formaction="../HTML5andCSS3/php/send2.php"></p>
+
+    </form> 
+    <p>E-posta: <input type="email" id="userEmail" name="userEmail" form="myForm"></p>
+    <!--2.butonumuzu send2.phpye yönlendirmiş olduk formaction attribute sayesinde-->
+
+
+    <!--NOT!!!!!!= bu lesson16 yani lesson58.dersimiz burada son bulmuştur lesson58 ve lesson59.derslerimizi ayrıntıları defterde mevcuttur defterden bakabiliriz bu attributeler ne anlamda kullanılıyor.-->
+</section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

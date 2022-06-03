@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 24 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimizde html5 de sayfamıza nasıl ses dosyası ekleriz bunu göreceğiz hızlıca kodumuza geçelim-->
+            <!--sayfamıza ses dosyası eklememiz için audio etiketini kullanırız 
+
+            <audio src="audio/music1.mp3" controls>
+                Tarayıcınız HTML 5 Audio Özelliğini Desteklemektedir.
+            </audio>
+           -->
+
+            <!--video etiketinde olduğu gibi burada da source etiketiyle ses dosyasını sitemize yüklememiz daha uygun olacaktır
+            <audio controls style="width: 600px;">
+                <source src="audio/music1.mp3" type="audio/mp3">
+            </audio>-->
+
+            <!--sayfa açılır açılmaz ses dosyamızın çalmasını istersek eğer autoplay attribute kullanmamız gerekmektedir
+            <audio controls autoplay style="width: 600px;" >
+                <source src="audio/music1.mp3" type="audio/mp3">
+            </audio>
+            -->
+
+            <!--eğer ses dosyamızın sürekli tekrar etmesini istersek loop attribute kullanmamız gerekmektedir
+            <audio controls autoplay loop style="width: 600px;" >
+                <source src="audio/music1.mp3" type="audio/mp3">
+            </audio>
+            -->
+
+            <!--şimdi gelelim object ve embed etiketlerimize ilk önce animasyon ekleyelim her iki etiketimiz ile swf dosyaları yükleyebiliriz ama onun yerine gif yükleyeceğim
+            <object width="auto" height="auto" data="../HTML5andCSS3/12980938627725216765.gif"></object>-->
+            <!-- aynı şeyi birde embed etiketi ile ekleyelim 
+            <embed width="auto" height="auto" src="../HTML5andCSS3/12980938627725216765.gif"> -->
+
+            <!--şimdi biz object veya embed etiketi ile bunları değil html dosyalarıda ekleyebiliyoruz hemen gösterelim
+            <object width="600" height="400" data="../HTML5andCSS3/lesson13.html"></object>-->  
+            <!--aynı şeyi birde embed etiketi ile ekleyelim
+            <embed width="600" height="400" src="../HTML5andCSS3/lesson16.html">-->
+
+            <!--şimdi gelelim sitemize youtube videoları nasıl yüklenir. ilk önce youtube sayfasına gidelim yüklemek istediğimiz
+            videoya girelim ve oradan paylaş kısmından yerleştir kodunu kopyalayıp sitemize burada kullanalım daha sonra üzerinde aşama
+            aşama oynamalar yapacağız   
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AtVPsPct4KM" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>--> 
+            <!--gördüğümüz üzere sitemize bir youtube videosu ekledik-->
+            
+            <!--eğer ben sitemin açılır açılmaz o youtube videomun çalışmasını istiyorsam eğer iframe etiketi içinde src bölümüne gidelim ve ?autoplay=1 yapalım 1=autoplay açık 0=autoplay kapalı anlmaındadır
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AtVPsPct4KM?autoplay=0" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>-->
+            
+            <!--sitemizde youtube video olarak playlist oluşturabilirz aynı src ye gidip ?playlist=linkte bulunan son kodu ekle, yeni ekleyeceğimiz kodu eklelinkin sonunda bulunan
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AtVPsPct4KM?playlist=AtVPsPct4KM,r3pwloKMRwM" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> -->
+            
+            <!--eğer oluşturduğumuz bu playlistimizin döngüde olmasını istersek burada loop kullanacağız:?playlist=AtVPsPct4KM,r3pwloKMRwM&loop=1 
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AtVPsPct4KM?playlist=AtVPsPct4KM,r3pwloKMRwM&loop=1" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> -->
+            
+            <!--sitemizde eklediğimiz youtube videomuzun butonlarını açıp kapatabilriz bunuda ?controls=1 veya ?controls=0 ile -->
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/AtVPsPct4KM?controls=0" title="YouTube video player" frameborder="0" 
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

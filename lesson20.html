@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 20 </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <header>
+                <h2>Eğitim Setlerim</h2>
+            </header>
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <header>
+                <h2>Reklam Engelleyici Kullanımı</h2>
+            </header>
+            <!--bu dersimizde 2 konu göreceğiz ilki canvas ile çember çizme diğeri ise canvas ile metin oluşturma-->
+            <!--defterde ayrıntılı olarak notlandırdım burada fazla ayrıntıya girmeden örnek vereceğim-->
+            <!--ilk olarak daire çizme ile başlayalım-->
+            <canvas id="newCanvas" width="600" height="300" style="border: 1px solid #bbb;"></canvas>
+            <!--canvas ile tasarım oluştururken javascript ile oluşturuyorduk
+           <script>
+               var myCanvas=document.querySelector("#newCanvas");
+               var content=myCanvas.getContext("2d");
+               content.lineWidth="4"; /*çizginin genişliği*/
+               content.strokeStyle="green"; /*çizginin rengi*/
+               content.arc(300,130,90,0,2*Math.PI, false); /*(x,y,yarıçap,başlangıç nok., bitiş nok. saat yönü)*/
+               content.stroke(); /*çemberi çizdirmek için*/
+           </script>
+        -->
+        <!--0 dan 0.5pi ye kadar çizdirmek
+        <script>
+            var myCanvas=document.querySelector("#newCanvas");
+            var content=myCanvas.getContext("2d");
+            content.lineWidth="4"; /*çizginin genişliği*/
+            content.strokeStyle="green"; /*çizginin rengi*/
+            content.arc(300,130,90,0,0.5*Math.PI, false); /*(x,y,yarıçap,başlangıç nok., bitiş nok. saat yönü)*/
+            content.stroke(); /*çemberi çizdirmek için*/
+        </script>
+        -->
+        <!--0 dan 1pi ye kadar çizdirmek
+        <script>
+            var myCanvas=document.querySelector("#newCanvas");
+            var content=myCanvas.getContext("2d");
+            content.lineWidth="4"; /*çizginin genişliği*/
+            content.strokeStyle="green"; /*çizginin rengi*/
+            content.arc(300,130,90,0,1*Math.PI, false); /*(x,y,yarıçap,başlangıç nok., bitiş nok. saat yönü)*/
+            content.stroke(); /*çemberi çizdirmek için*/
+        </script>
+        -->
+        <!--0 dan 1pi ye kadar çizdirmek saat yönü tersi
+        <script>
+            var myCanvas=document.querySelector("#newCanvas");
+            var content=myCanvas.getContext("2d");
+            content.lineWidth="4"; /*çizginin genişliği*/
+            content.strokeStyle="green"; /*çizginin rengi*/
+            content.arc(300,130,90,0,1*Math.PI, true); /*(x,y,yarıçap,başlangıç nok., bitiş nok. saat yönü)*/
+            content.stroke(); /*çemberi çizdirmek için*/
+        </script>
+        -->
+        <!--0.5pi den 1.5pi ye kadar çizdirmek saat yönü
+        <script>
+            var myCanvas=document.querySelector("#newCanvas");
+            var content=myCanvas.getContext("2d");
+            content.lineWidth="4"; /*çizginin genişliği*/
+            content.strokeStyle="green"; /*çizginin rengi*/
+            content.arc(300,130,90,0.5*Math.PI,1.5*Math.PI, false); /*(x,y,yarıçap,başlangıç nok., bitiş nok. saat yönü)*/
+            content.stroke(); /*çemberi çizdirmek için*/
+        </script>
+        -->
+
+        <!--şimdi gelelim bu dersimizin ikinci konusu olan metin oluşturmaya. Dikkat burada metinler çiziliyor yazdırılmıyor
+        not: fill içi dolu, stroke dış çizgi içi boş şekilde metinler oluşturur-->
+        <script>
+            var myCanvas = document.querySelector("#newCanvas");
+            var content = myCanvas.getContext("2d");
+
+            
+            content.font="56px Arial";  
+            /*fill içi dolgulu metin tasarlarken
+            content.fillStyle="#900";
+            /*kural yukarıdaki iki kodu aşağıdakinden önce yazmaya dikkat et stilleri      
+            content.fillText("Muhammet Taha ADIYAMAN",50,50);*/  
+           
+            /*stroke ile dış çizgili içi boş bir metin tasarlıyoruz
+            content.strokeStyle="#000";
+            content.strokeText("Muhammet Taha ADIYAMAN",50,50);
+            content.lineWidth="3";
+            */
+
+            /*dilersek hem içi dolu hemde dış çizgi ile çizilmiş metin tasarlayabiliriz dışı siyah içi kırmızı olan bir metin tasarlayalım*/
+            content.fillStyle="#900";
+                      
+            content.fillText("Muhammet Taha",100,100);
+            content.lineWidth="2";
+            content.strokeStyle="#000"
+            content.strokeText("Muhammet Taha",100,100);
+            
+
+        </script>
+<!--defterde bu dersin ayrıntılı şekilde anlatımı mevcuttur oradan bakabilirizzz-->
+        </section>
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+    </body>
+</html>
+

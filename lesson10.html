@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <title>fehmiuyarnet | lesson 10  </title>
+        <link rel="stylesheet" type="text/css" href="../HTML5andCSS3/css/style.css">
+            <script>document.createElement("makale");</script>
+    </head>
+    <body>
+        <main> <!--son etiketimiz main etiketimizdir bunun amacıda önceden div class main şeklinde atadığımız en dış katmanı html5 ile beraber main etiketi ile atamış oluyoruz. en dış katman olarak kullanılır ve sadece bir kez kullanılır.-->
+        <!--header-->
+        <header class="header">
+            <h1>HTML5 VE CSS3 EĞİTİM SETİ</h1>
+        </header>
+
+        <!--nav(menu)-->
+        <nav class="menu">
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Services</a></li>
+                <li><a href="#">News</a></li>
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Privacy Policy</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </nav>
+
+        <!--sidebar (aside)-->
+        <aside class="sidebar">
+            <!--şimdi burada <details> ve <summary> etiketini oluşturacağız. bu etiketler ile gizle,göster - hide/show yapabiliriz.-->
+            <details>
+                <summary>Eğitim Setlerim</summary>
+            
+            <ul>
+                <li><a href="#">HTML</a></li>
+                <li><a href="#">CSS</a></li>
+                <li><a href="#">HTML5</a></li>
+                <li><a href="#">CSS3</a></li>
+                <li><a href="#">JAVASCRIPT</a></li>
+                <li><a href="#">NODEJS</a></li>
+            </ul>
+        </details>
+        <details open> <!--open yazdığımızda hide/see sekmemiz açık şekilde görünecek dilersek kapatibilecek şekilde olacaktır.-->
+            <br>
+            <summary>Login</summary>
+            <form>
+                <label>Kullanıcı Adı: </label>
+                <p><input type="text" name="username" id="username" placeholder="username:"/></p>
+                <label>Parola: </label>
+                <p><input type="password" name="password" id="password" placeholder="username:"/></p>
+
+            </form>
+        </details>
+
+        </aside>
+
+        <!--section(change)-->
+        <section class="change">
+            <!--şimdi ise bdi etiketine gelelim normalde türkçe soldan sağa doğru okunur ancak arapça sağdan sola doğru gider arapçayıda türkçe gibi yapmak için dbi etiketini kullanabiliriz örnek olarak belirttim. -->
+            <!--önce-->
+            <ul>
+                <li>User hrefs: 60 points</li>
+                <li>User jdoe: 80 points</li>
+                <li>User إيان: 90 points</li>
+            </ul>
+            <!--sonra-->
+            <ul>
+                <li>User <bdi>hrefs</bdi>: 60 points</li>
+                <li>User <bdi>jdoe</bdi>: 80 points</li>
+                <li>User <bdi>إيان</bdi>: 90 points</li>
+              </ul>
+
+            <!--bir diğer etiketimiz olan dialog etiketini görelim. Bu etiket sayesinde açılır pencere yapabiliyoruz. Sitelere girdiğimizde önümüze açılır ekranda reklam çıkıyor mesela-->  
+            <dialog open style="color: black; border: 1px solid white;">
+                <h3>reklam</h3>
+            </dialog>
+
+            <!--bir diğer etiketlerimiz ise rt,rb,ruby etiketleri bu diller orta asya dilleri için geçerlidir. bir dil ve bir dilin telaffuzunun nasıl yapılacağı konusunda bu etiketleri kullanırız rt etiketi telaffuz ruby ise dil etiketimizdir aşağıda gösterelim-->
+            <ruby>
+                çince <rt>japonca</rt>
+            </ruby>
+        </section>
+
+        <!--footer-->
+        <footer class="page-bottom">
+            &copy; 2019 fehmiuyarnet kanalı tüm hakları saklıdır.
+        </footer>
+        </main>
+    </body>
+</html>
